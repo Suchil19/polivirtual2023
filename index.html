@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polivirtual</title>
+    <link rel="shortcut icon" type="image/png" href="./img/Logo_e4-0.png">
+    <!--PWA-->
+    <link rel="manifest" href="./manifest.json">
+    <!--BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--BOOTSTRAP NUEVOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous"/>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Estilos Internos-->
+    <link rel="stylesheet" type="text/css" href="polivirtual/css/vendor.css">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/styleJL.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	</head>
+  <body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+  <div id="preloader"></div>
+
+	<!-- Start Header Area -->
+  <header class="header-area">
+    <div class="banner">
+      <p>gob.mx &nbsp;<a href="https://www.gob.mx/tramites">| Trámites </a>&nbsp;<a href="https://www.gob.mx/gobierno">| Gobierno </a>&nbsp;<a href="https://www.participa.gob.mx/"> | Participa</a>&nbsp;<a href="https://datos.gob.mx/"> | Datos</a>&nbsp; <a href="https://www.gob.mx/busqueda">|&nbsp;<i class="fas fa-search"></i></a></p>
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
+        class="cross svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 352 512">
+        <path fill="currentColor"
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+        </path>
+      </svg>
+    </div>
+
+    <!-- main header start -->
+    <div class="main-header d-none d-lg-block">
+        <!-- header middle area start -->
+        <div class="header-main-area sticky">
+            <div class="container">
+                <div class="row align-items-center position-relative">
+                    <!-- start logo area -->
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="./img/Logo_e4-Blanco.png" alt="Logo 4.0 | Luis">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- start logo area -->
+
+                    <!-- main menu area start -->
+                    <div class="col-lg-8 position-static">
+                        <div class="main-menu-area">
+                            <div class="main-menu">
+                                <!-- main menu navbar start -->
+                                <nav class="desktop-menu">
+                                    <ul>
+                                        <li class="active"><a href="./index.html">Inicio</a>
+                                        </li>
+                                    <!--CALENDARIOS-->    
+                                    <li><a href="#">Calendarios<i class="fa fa-angle-down"></i></a>
+                                      <ul class="dropdown">
+                                          <li><a href="./polivirtual/calendario-academico.html">Calendario Académico</a>
+                                          </li>
+                                          <li><a href="./polivirtual/calendario-de-actividades-de-nivel-medio-superior.html">Calendario de Actividades de Nivel Medio Superior</a>
+                                          </li>
+                                          <li><a href="./polivirtual/calendario-enba.html">Calendario ENBA</a>
+                                          </li>
+                                      </ul>
+                                  </li>  
+                                  <!--CHAT-->   
+                                      <li class="active"><a href="./polivirtual/chat.html">Chat</a></li>
+                                  <!--COMUNIDAD-->   
+                                      <li class="static"><a href="#">Comunidad<i class="fa fa-angle-down"></i></a>
+                                        <ul class="megamenu dropdown">
+
+
+                                          <li class="mega-title"><a href="#">Polivirtual</a>
+                                            <ul>
+                                              
+                                              <br>
+                                              <li class="menu-item-has-children"><a href="./polivirtual/acerca-de.html">Acerca de</a>
+                                            </ul>
+                                          </li>
+
+                                          <li class="mega-title"><a href="#">Perfiles</a>
+                                            <ul>
+                                              
+                                              <br>
+                                              <li class="menu-item-has-children"><a href="./polivirtual/aspirantes.html">Aspirante</a>
+                                              <li class="menu-item-has-children"><a href="./polivirtual/alumnos.html">Alumnos</a>
+                                              <li class="menu-item-has-children"><a href="./polivirtual/egresados.html">Egresados</a>
+                                            </ul>
+                                            <br>
+                                        </li>
+
+
+                                          <li class="mega-title"><a href="#">Comunidad Polivirtual</a>
+                                            <ul>
+                                              
+                                              <li class="menu-item-has-children"><a href="./polivirtual/contacto-por-escuela.html">Contactos Por Escuela</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/poli-informate.html">Poli-infórmate</a>
+                                                  
+                                          </ul>
+                                        </li>
+
+                                        
+                                        <li class="mega-title"><a href="#">Plataformas</a>
+                                          <ul>
+                                            
+                                         
+                                              <li class="menu-item-has-children"><a href="./polivirtual/nms.html">NMS</a>
+                                              <li class="menu-item-has-children"><a href="./polivirtual/bgp.html">BGP</a>
+                                              <li class="menu-item-has-children"><a href="./polivirtual/ns.html">NS</a>
+                                              <li class="menu-item-has-children"><a href="./polivirtual/pilares.html">Pilares</a>
+                                        </ul>
+                                      </li>
+                                          
+                                        </ul>
+                                    </li>      
+
+
+                                    <li><a href="#">Convocatoria<i class="fa fa-angle-down"></i></a>
+                                      <ul class="dropdown">
+                                          <li><a href="./polivirtual/proceso-de-admision.html">Proceso de admisión</a></li>
+                                          <li><a href="./polivirtual/convocatoria-ns.html">Convocatoria NS</a></li>
+                                          <li><a href="./polivirtual/convocatoria-nms.html">Convocatoria NMS</a></li>
+                                          
+                                      </ul>
+                                  </li>
+
+                                        <li class="static"><a href="#">Oferta Educativa<i class="fa fa-angle-down"></i></a>
+                                          <ul class="megamenu dropdown">
+
+                                            <li class="mega-title"><a href="./polivirtual/especialidades-medio-superior.html">Medio Superior Modalidad <br>No escolarizada<!--BTBD--></a>
+                                              <ul>
+                                                <!--li class="menu-item-has-children"><a href="#NoEscolarizada"> Todas las especialidades</a-->
+                                                <br>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/bachillerato-general-polivirtual.html">Bachillerato General Polivirtual</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/tecnico-en-administracion.html">Administración</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/administracion-de-recursos-humanos.html">Administración de<br> Recursos Humanos</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/comercio-internacional.html">Comercio Internacional</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/construccion.html">Construcción</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/desarrollo-de-software.html">Desarrollo de Software</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/diagnostico-y-mejoramiento-ambiental.html">Diagnóstico y Mejoramiento<br> Ambiental</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/diseño-grafico-digital.html">Diseño Gráfico Digital</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/informatica.html">Informática</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/mercadotecnia.html">Mercadotecnia</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/nutricion-humana.html">Nutrición Humana</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/quimico-farmaceutico.html">Químico Farmacéutico</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/sistemas-computacionales.html">Sistemas Computacionales</a>
+                                              </ul>
+                                              <br>
+                                          </li>
+
+                                              <li class="mega-title"><a href="./polivirtual/especialidades-medio-superior.html">Medio Superior Modalidad Mixta <!--<br>BGP--></a>
+                                                  <ul>
+                                                    <br>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/computacion.html">Computación</a>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/soldadura-industrial.html">Soldadura Industrial</a>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/telecomunicaciones.html">Telecomunicaciones  </a>
+                                                </ul>
+                                                  <br>
+                                                  
+                                              </li>
+
+                                              
+                                              <li class="mega-title"><a href="./polivirtual/especialidades-nivel-superior.html">Nivel Superior Modalidad <br>No Escolarizada</a>
+                                                <ul>
+                                                  <!--li class="menu-item-has-children"><a href="./polivirtual/videos.html">Todas las especialidades</a-->
+                                                    <br>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/administracion-y-desarrollo.html">Administración y Desarrollo</a>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/archivonomia.html">Archivonomía</a>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/biblioteconomia.html">Biblioteconomía</a>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/licenciatura-en-comercio-internacional.html">Comercio Internacional</a>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/contador-publico.html">Contador Público</a>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/contaduria-y-finanzas.html">Contaduría y Finanzas</a>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/negocios-internacionales.html">Negocios Internacionales</a>
+                                                    <li class="menu-item-has-children"><a href="./polivirtual/relaciones-comerciales.html">Relaciones Comerciales</a>
+                                                </ul>
+                                                <br>
+                                                <ul>
+                                                  <li class="mega-title"><a href="./polivirtual/especialidades-nivel-superior.html">Superior Modalidad Mixta</a>
+                                                  <li class="menu-item-has-children"><a href="./polivirtual/turismo.html">Turismo</a>
+                                              </ul>
+                                            </li>
+
+
+                                            <li class="mega-title"><a href="#">Posgrado</a>
+                                              <ul>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/especialidades-posgrado.html">Especialidades Posgrado</a>
+                                              </ul>
+                                              <br>
+                                              <!--ul>
+                                                <li class="mega-title"><a href="./polivirtual/videos.html">Superior Modalidad Mixta</a>
+                                                <li class="menu-item-has-children"><a href="./polivirtual/videos.html">Turismo</a>
+                                            </ul-->
+                                          </li>
+                                            
+                                          </ul>
+                                      </li>      
+                                      
+
+                                        <!--li class="#"><a href="./educacion-4.0/videos.html">Videos</a></li-->  
+                                <!--
+                                        <li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signinModal">Ingresa</a></li>
+                                        <li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal">Registrate</a></li>
+                                        <li style="display: none;" class="logged-in"><a href="#">Nuevos Avisos</a></li>
+                                        <li style="display: none;" class="logged-in"><a href="#" id="logout" onclick="noticias()">Salir</a></li>
+                                -->
+                                    </ul>
+                                </nav>
+                                <!-- main menu navbar end -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main menu area end -->
+                </div>
+            </div>
+        </div>
+        <!-- header middle area end -->
+    </div>
+    <!-- main header start -->
+
+    <!-- mobile header start -->
+    <div class="mobile-header d-lg-none d-md-block sticky">
+        <!--mobile header top start -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="mobile-main-header">
+                        <div class="mobile-logo">
+                            <a href="./index.html">
+                                <img src="./img/Logo_e4-Blanco.png" alt="IPN | Polivirtual">
+                            </a>
+                        </div>
+                        <div class="mobile-menu-toggler">
+                            <div class="mobile-menu-btn">
+                                <div class="off-canvas-btn">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile header top start -->
+    </div>
+    <!-- mobile header end -->
+    
+</header>
+<!-- end Header Area -->
+
+<!-- off-canvas menu start -->
+<aside class="off-canvas-wrapper">
+    <div class="off-canvas-overlay"></div>
+    <div class="off-canvas-inner-content">
+        <div class="btn-close-off-canvas">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="off-canvas-inner">
+            <!-- search box start 
+            <div class="search-box-offcanvas">
+                <form>
+                    <input type="text" placeholder="Search Here...">
+                    <button class="search-btn"><i class="ion-ios-search-strong"></i></button>
+                </form>
+            </div>
+            <search box end -->
+
+            <!-- mobile menu start -->
+            <div class="mobile-navigation">
+                <!-- mobile menu navigation start -->
+                <nav>
+                    <ul class="mobile-menu">
+
+                        <li class="menu-item-has-children"><i class="fas fa-home"></i>&nbsp;<a href="index.html">Inicio</a>
+                        <li class="menu-item-has-children"><i class="fas fa-user"></i>&nbsp;<a href="./polivirtual/aspirantes.html">Aspirante</a>
+                        <li class="menu-item-has-children"><i class="fas fa-user-friends"></i>&nbsp;<a href="./polivirtual/alumnos.html">Alumnos</a>
+                        <li class="menu-item-has-children"><i class="fas fa-graduation-cap"></i>&nbsp;<a href="./polivirtual/egresados.html">Egresados</a>
+                        
+
+                          <!--OFERTA EDUCATIVA-->
+                          <li class="menu-item-has-children"><i class="fas fa-book-reader"></i>&nbsp;<a href="#">Oferta Educativa</a>
+                            <ul class="megamenu dropdown">
+
+                              <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Medio Superior</a>
+                                <ul class="dropdown">
+                                  
+                                  <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">No Escolarizada</a>
+                                    <ul class="dropdown">
+                                  <li class="menu-item-has-children"><a href="./polivirtual/bachillerato-general-polivirtual.html">Bachillerato General Polivirtual</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/tecnico-en-administracion.html">Administración</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/administracion-de-recursos-humanos.html">Administración de Recursos Humanos</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/comercio-internacional.html">Comercio Internacional</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/construccion.html">Construcción</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/desarrollo-de-software.html">Desarrollo de Software</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/diagnostico-y-mejoramiento-ambiental.html">Diagnóstico y Mejoramiento Ambiental</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/diseño-grafico-digital.html">Diseño Gráfico Digital</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/informatica.html">Informática</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/mercadotecnia.html">Mercadotecnia</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/nutricion-humana.html">Nutrición Humana</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/quimico-farmaceutico.html">Químico Farmacéutico</a>
+                                  <li class="menu-item-has-children"><a href="./polivirtual/sistemas-computacionales.html">Sistemas Computacionales</a>
+                                  </li>
+                                </ul>
+                              </ul>
+
+                              <ul class="dropdown">
+                                <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Mixta</a>
+                                  <ul class="dropdown">
+                                <li class="menu-item-has-children"><a href="./polivirtual/computacion.html">Computación</a>
+                                <li class="menu-item-has-children"><a href="./polivirtual/soldadura-industrial.html">Soldadura Industrial</a>
+                                <li class="menu-item-has-children"><a href="./polivirtual/telecomunicaciones.html">Telecomunicaciones  </a>
+                                </li>
+                              </ul>
+                              <li class="mega-title menu-item-has-children"><a href="polivirtual/especialidades-medio-superior.html">Todas las especialidades</a>
+                            </ul>
+                           </li>
+
+                                <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Superior</a>
+                                    <ul class="dropdown">
+                                      
+                                      <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">No Escolarizada</a>
+                                        <ul class="dropdown">
+                                        <li class="menu-item-has-children"><a href="./polivirtual/administracion-y-desarrollo.html">Administración y Desarrollo</a>
+                                        <li class="menu-item-has-children"><a href="./polivirtual/archivonomia.html">Archivonomía</a>
+                                        <li class="menu-item-has-children"><a href="./polivirtual/biblioteconomia.html">Biblioteconomía</a>
+                                        <li class="menu-item-has-children"><a href="./polivirtual/licenciatura-en-comercio-internacional.html">Comercio Internacional</a>
+                                        <li class="menu-item-has-children"><a href="./polivirtual/contador-publico.html">Contador Público</a>
+                                        <li class="menu-item-has-children"><a href="./polivirtual/contaduria-y-finanzas.html">Contaduría y Finanzas</a>
+                                        <li class="menu-item-has-children"><a href="./polivirtual/negocios-internacionales.html">Negocios Internacionales</a>
+                                        <li class="menu-item-has-children"><a href="./polivirtual/relaciones-comerciales.html">Relaciones Comerciales</a>
+                                        </li>
+                                    </ul>
+                                  </ul>
+
+                                    <ul class="dropdown">
+                                      <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Mixta</a>
+                                        <ul class="dropdown">
+                                          <li class="menu-item-has-children"><a href="./polivirtual/turismo.html">Turismo</a>
+                                      </li>
+                                    </ul>
+
+                                    <li class="mega-title menu-item-has-children"><a href="polivirtual/especialidades-nivel-superior.html">Todas las especialidades</a>
+                                  </ul>
+                                 </li>
+
+
+                                <li class="mega-title menu-item-has-children"><a href="./polivirtual/especialidades-posgrado.html">Posgrado</a>
+                                    <!--ul class="dropdown">
+                                      <li class="menu-item-has-children"><i class="fab fa-youtube"></i>&nbsp;<a href="./polivirtual/Pruebas.html">Pruebas</a>
+                                        <li><a href="#">Posgrado 02</a></li>
+                                    </ul-->
+                                </li>
+                                <!--li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Modalidades</a>
+                                    <ul class="dropdown">
+                                      <li class="menu-item-has-children"><a href="./polivirtual/videos.html">Modalidad No Escolarizada</a>
+                                      <li class="menu-item-has-children"><a href="./polivirtual/videos.html">Modalidad Mixta</a>
+                                    </ul>
+                                </li-->
+                            </ul>
+                        </li>
+
+                         
+                        <!--Calendario Polivirtual-->
+                        <li class="menu-item-has-children"><i class="far fa-calendar-alt"></i>&nbsp;<a href="#">Calendarios</a>
+                          <ul class="megamenu dropdown">
+                            <li class="menu-item-has-children"><a href="./polivirtual/calendario-academico.html">Calendario Académico</a>
+                            <li class="menu-item-has-children"><a href="./polivirtual/calendario-de-actividades-de-nivel-medio-superior.html">Calendario de actividades de nivel medio superior</a>
+                            <li class="menu-item-has-children"><a href="./polivirtual/calendario-enba.html">Calendario ENBA</a>
+
+                              <!--li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Calendario Polivirtual</a>
+                                  <ul class="dropdown">
+                                    <li class="menu-item-has-children"><a href="./polivirtual/videos.html">Medio Superior</a>
+                                    <li class="menu-item-has-children"><a href="./polivirtual/videos.html">Nivel Superior</a>
+                                  </ul>
+                              </li-->
+                          
+                          </ul>
+                        </li>
+                        <!--Comunidad Polivirtual-->
+                          <li class="menu-item-has-children"><i class="far fa-id-badge"></i>&nbsp;<a href="#">Comunidad Polivirtual</a>
+                            <ul class="megamenu dropdown">
+                              <li class="menu-item-has-children"><a href="./polivirtual/acerca-de.html">Acerca de</a>
+                              <li class="menu-item-has-children"><a href="./polivirtual/contacto-por-escuela.html">Contactos por escuela</a>
+                              <li class="menu-item-has-children"><a href="./polivirtual/poli-informate.html">Poli-infórmate</a>
+
+                                <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Plataformas</a>
+                                    <ul class="dropdown">
+                                      <li class="menu-item-has-children"><a href="./polivirtual/nms.html">NMS</a>
+                                      <li class="menu-item-has-children"><a href="./polivirtual/bgp.html">BGP</a>
+                                      <li class="menu-item-has-children"><a href="./polivirtual/ns.html">NS</a>
+                                      <li class="menu-item-has-children"><a href="./polivirtual/pilares.html">Pilares</a>
+                                    </ul>
+                                </li>
+                             
+                            </ul>
+                        </li>
+
+                        <!--PREGUNTAS FRECUENTES-->
+                        <!--li class="menu-item-has-children"><i class="far fa-question-circle"></i>&nbsp;<a href="./polivirtual/videos.html">Preguntas Frecuentes</a-->
+                        
+                          <!--PROCESO DE ADMISION-->
+                        <li class="menu-item-has-children"><i class="fas fa-sync-alt"></i>&nbsp;<a href="#">Proceso de Admisión</a>
+                          <ul class="megamenu dropdown">
+
+                            <li class="menu-item-has-children"><a href="./polivirtual/proceso-de-admision.html">Proceso de admisión</a></li>
+                            <li class="menu-item-has-children"><a href="./polivirtual/convocatoria-ns.html">Convocatoria NS</a></li>
+                            <li class="menu-item-has-children"><a href="./polivirtual/convocatoria-nms.html">Convocatoria NMS</a></li>
+
+                          </ul>
+                      </li>
+
+                        <!--li class="menu-item-has-children"><i class="fas fa-graduation-cap"></i>&nbsp;<a href="./polivirtual/talento.html">Talento 4.0</a>
+                        <li class="menu-item-has-children"><a href="#"><i class="fas fa-school"></i>&nbsp;Educación 4.0</a>
+                                <ul class="dropdown">
+                                    <li class="menu-item-has-children"><i class="far fa-hand-point-right"></i>&nbsp;<a href="../polivirtual/educacion4-0.html">Educación 4.0</a>
+                                    <li class="menu-item-has-children"><i class="far fa-hand-point-right"></i>&nbsp;<a href="./polivirtual/educacion4-0-ipn.html">Educación 4.0 en el IPN</a>
+                                    <li class="menu-item-has-children"><i class="far fa-hand-point-right"></i>&nbsp;<a href="./polivirtual/acerca-de.html">Acerca de</a>
+                                </ul>
+                        </li-->
+                      
+                        <li class="menu-item-has-children"><i class="fas fa-headset"></i>&nbsp;<a href="./polivirtual/chat.html">Ponte en contacto ahora</a>
+
+
+                        <!--li class="menu-item-has-children"><i class="fab fa-youtube"></i>&nbsp;<a href="./polivirtual/videos.html">Carrera Ejemplo</a-->
+
+                        <!-- Agregar una sola linea
+
+                        <li class="menu-item-has-children"><i class="fas fa-users"></i>&nbsp;<a href="index.html">Expertos</a>
+                        
+                        -->
+
+                        <br>
+                        
+                        <li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signinModal"><i class="far fa-edit"></i>&nbsp;Ingresa | Regístrate</a></li>
+                        <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+                        <li style="display: none;" class="logged-in"><a href="./polivirtual/registro.html"><i class="fas fa-bell"></i>&nbsp;Nuevos Avisos</a></li>
+                        <li style="display: none;" class="logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+
+                    </ul>
+                </nav>
+                <!-- mobile menu navigation end -->
+            </div>
+            <!-- mobile menu end -->
+
+            <!-- offcanvas widget area start -->
+            <div class="offcanvas-widget-area">
+                <div class="off-canvas-contact-widget">
+                    <ul>
+                        <!--li><i class="fa fa-mobile"></i>
+                            <a href="#">0123456789</a>
+                        </li>
+                        <i class="far fa-envelope"></i-->
+                            <!--a href="mailto:ipneducacion4.0@gmail.com"><i class="fas fa-envelope"></i>&nbsp;Educacion4.0@gmail.com</a-->
+                        </li>
+                    </ul>
+                </div>
+                <div class="off-canvas-social-widget">
+                  <a href="https://www.facebook.com/Polivirtual.Oficial"><i class="fab fa-facebook-f"></i></a>
+                  <!--a href="https://www.instagram.com/educacion4.0/?hl=es-la"><i class="fab fa-instagram"></i></a-->
+                  <a href="https://twitter.com/Polivirtual_IPN"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/channel/UCQuC6O_iVpdiuhSHe-12jvA"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- offcanvas widget area end -->
+        </div>
+    </div>
+</aside>
+<!-- off-canvas menu end -->
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="hero">
+        <div class="container">
+          <br>
+          <br>
+            <h2 class="sub-headline1">
+                <span style="display: none;" class="logged-out">Bienvenido</span>
+                <span style="display: none;" class="logged-in">Gracias por registrate</span>
+            </h2>
+            <h1 class="headline1">
+                Polivirtual IPN
+            </h1>
+
+            <!--div class="headline-description">
+                <div class="separator">
+                    <div class="line line-left"></div>
+                    <div class="asterisk"><i class="fas fa-pencil-alt"></i></div>
+                    <div class="line line-right"></div>
+                </div>
+            <div class="single-animation">
+                <h5>Polivirtual</h5>
+                <a href="#modelos" class="btn cta-btn">Comienza</a>
+            </div>
+            </div-->
+        </div>
+    </section>
+
+    <!-- Termina el inicio -->
+
+
+    <!--BOOTSTRAP CARDS-->
+
+    <div class="container__galeria">
+      <div class="marvel-container spiderman">
+        <div class="row">
+          <div class="col-md-5 pr-md-0">
+            <div class="img-container">
+              <div class="img-wrapper">
+                <div class="background"></div>
+                <img src="img/inicio/slider01.png" alt="" />
+              </div>
+              <div class="img-wrapper">
+                <div class="background"></div>
+                <img src="img/inicio/slider02.png" alt="" />
+              </div>
+              <div class="img-wrapper">
+                <div class="background"></div>
+                <img src="img/inicio/slider03.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide p-md-5 p-3">
+                  <div class="name">
+                    <div class="sub-title">
+                      <div class="text-wrapper">
+                        <span>Polivirtual</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-11 offset-md-1">
+                        <div class="title">
+                          <div class="text-wrapper">
+                            <span>Aspirantes</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overview">
+                    <div class="title">
+                      <div class="text-wrapper">
+                        <span>IPN</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-11 offset-md-1">
+                        <div class="text-wrapper">
+                          <span>
+                            <p class="description">
+                              Si quieres pertenecer al Instituto Politécnico Nacional 
+                              en su modalidad no escolarizada y mixta, 
+                              deberás participar en la convocatoria 
+                               y apegarte a lo que indica
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="purchase">
+                    <div class="year">IPN</div>
+                    <a href="./polivirtual/aspirantes.html"><button class="purchase-btn">Ver más</button></a>
+                  </div>
+                </div>
+                <!--                  -->
+                <div class="swiper-slide p-md-5 p-3">
+                  <div class="name">
+                    <div class="sub-title">
+                      <div class="text-wrapper">
+                        <span>Polivirtual</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-11 offset-md-1">
+                        <div class="title">
+                          <div class="text-wrapper">
+                            <span>Alumnos</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overview">
+                    <div class="title">
+                      <div class="text-wrapper">
+                        <span>IPN</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-11 offset-md-1">
+                        <div class="text-wrapper">
+                          <span>
+                            <p class="description">
+                              Si eres alumno de las 
+                              modalidades no escolarizada y mixta, 
+                              revisa el calendario. 
+                              Aquí también podrás encontrar
+                               actividades de tu interés.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="purchase">
+                    <div class="year">IPN</div>
+                    <a href="./polivirtual/alumnos.html"><button class="purchase-btn">Ver más</button></a>
+                  </div>
+                </div>
+                <!--                  -->
+                <div class="swiper-slide p-md-5 p-3">
+                  <div class="name">
+                    <div class="sub-title">
+                      <div class="text-wrapper">
+                        <span>Polivirtual</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-11 offset-md-1">
+                        <div class="title">
+                          <div class="text-wrapper">
+                            <span>Egresados</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overview">
+                    <div class="title">
+                      <div class="text-wrapper">
+                        <span>IPN</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-11 offset-md-1">
+                        <div class="text-wrapper">
+                          <span>
+                            <p class="description">
+                              Únete a nuestra comunidad de egresados
+                              del Polivirtual, y conoce lo que tenemos
+                              preparado para ti, además de las opciones 
+                             que tienes dentro del IPN.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="purchase">
+                    <div class="year">IPN</div>
+                    <a href="./polivirtual/egresados.html"><button class="purchase-btn">Ver más</button></a>
+                  </div>
+                </div>
+              </div>
+              <!-- pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SECTION BOOTSTRAP 2-->
+    
+
+
+        <!--MAIN CONTENT-->
+    <div class="containerB p-5" style="z-index:1" data-aos="zoom-out-up" data-aos-delay="20">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+        <ul class="list-group posts">
+      
+        </ul>
+        </div>
+      </div>
+      </div>
+
+<!--Video >
+  <section class="video" data-aos="zoom-out-up" data-aos-delay="20">
+    <div class="video__content" class="container" data-aos="zoom-out-up" data-aos-delay="20">
+      <a class="video__play" href="./educacion-4.0/videos.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="56" viewBox="0 0 44 56">
+          <path d="M4,53.5V54H3.1L0,56V0L44,28Zm0-4.2L36,28,4,6.7Z" fill="#fff" fill-rule="evenodd" />
+        </svg>
+      </a>
+      <h3></h3>
+      <h1>
+        Videos.
+      </h1>
+      <p>
+        Mira aquí todos nuestros videos.
+      </p>
+    </div>
+  </section>
+
+<!--Termina video -->
+
+
+    <section class="culinary-delight" id="modelos">
+      <div class="container3" data-aos="zoom-out-up" data-aos-delay="20">
+        <div class="restaurant-info">
+          <div class="restaurant-description padding-right animate-left">
+            <div class="global-headline">
+              <h2 class="sub-headline">
+                <span id="modelos" class="first-letter">O</span>ferta Educativa
+              </h2>
+              <h1 class="headline headline-dark">
+                Polivirtual
+              </h1>
+              <br>
+              <!-- <div class="asterisk"><i class="fas fa-camera-retro"></i></div> -->
+            </div>
+            <p>
+              Los programas académicos de nivel medio superior y superior están basados en un proceso de enseñanza aprendizaje que se 
+              desarrolla a través del uso de tecnologías y metodologías,
+              además cuentan con la validez y reconocimiento del IPN.
+              También, puedes encontrar diferentes opciones para continuar con alguna especialidad en nuestros programas de posgrado en línea.
+            </p>
+            <a href="./polivirtual/acerca-de.html" class="btn body-btn">Acerca de</a>
+          </div>
+
+          <div class="image-group">
+            <a href="./polivirtual/especialidades-medio-superior.html"><img class="animate-top" src="./img/inicio/medio_superior.png" alt=""></a>
+            <a href="./polivirtual/especialidades-nivel-superior.html"><img class="animate-bottom" src="./img/inicio/nivel_superior.png" alt=""></a>
+            <a href="./polivirtual/egresados.html"><img class="animate-bottom" src="./img/inicio/egresados.png" alt=""></a>
+            <a href="./polivirtual/especialidades-posgrado.html"><img class="animate-bottom" src="./img/inicio/posgrado.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Este es el verdadrero inicio 
+    <section class="discover-our-story">
+      <div class="container3">
+        <div class="restaurant-info">
+          <div class="restaurant-description padding-right animate-left">
+            <div class="global-headline">
+              <h2 class="sub-headline">
+                <span class="first-letter">B</span>ienvenido
+              </h2>
+              <h1 class="headline headline-dark">
+                Urvan Models
+              </h1>
+              <div class="asterisk"><i class="fas fa-camera-retro"></i></div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore magna aliqua.
+            </p>
+            <a href="#" class="btn body-btn">Nuestras modelos</a>
+            
+          </div>
+          <div class="restaurant-info-img animate-right">
+            <img src="./img/our-story-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aqui esta una version alterna de la primera seccion -->
+    
+    <!--
+    <section class="discover-our-story">
+      <div class="container3">
+        <div class="restaurant-info">
+          <div class="restaurant-description padding-right animate-left">
+            <div class="global-headline">
+              <h2 class="sub-headline">
+                <span class="first-letter">B</span>ienvenido
+              </h2>
+              <h1 class="headline headline-dark">
+                Urvan Models
+              </h1>
+              <div class="asterisk"><i class="fas fa-camera-retro"></i></div>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore magna aliqua.
+            </p>
+            <a href="#" class="btn body-btn">Nuestras modelos</a>
+            <a href="#" class="btn body-btn">Abou us</a>
+           
+             <div class="image-group padding-right animate-left">
+              <a href="#"><img src="./img/menu-group-1.jpg" alt=""></a>
+              <a href="#"><img src="./img/menu-group-2.jpg" alt=""></a>
+              <a href="#"><img src="./img/menu-group-3.jpg" alt=""></a>
+              <a href="#"><img src="./img/menu-group-4.jpg" alt=""></a>
+            </div>
+            
+          </div>
+          <div class="restaurant-info-img animate-right">
+            <img src="./img/inicio/our-story-1.jpg" alt="">
+          </div>
+         
+        </div>
+
+      </div>
+    </section>
+
+  -->
+    
+
+    <!-- Termina our story -->
+
+    <!-- Empieza tasteful recipes -->
+
+    <section class="tasteful-recipes between" data-aos="zoom-out-up" data-aos-delay="20">
+      <div class="container3" data-aos="zoom-out-up" data-aos-delay="40">
+        <div class="global-headline">
+          <div class="animated-top">
+            <h2 class="sub-headline">
+              <span class="first-letter">P</span>olivirtual
+            </h2>
+          </div>
+          <div class="animate-bottom">
+            <!--h1 class="headline">
+              de la educación politécnica
+            </h1-->
+            <br>
+            <a href="./polivirtual/proceso-de-admision.html" class="btn2">Proceso de admisión</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Termina tasteful recipes -->
+     <!-- Empieza discover you menu -->
+
+     <section class="discover-our-menu" data-aos="zoom-out-up" data-aos-delay="30">
+      <div class="container3">
+        <div class="restaurant-info">
+          <div class="image-group padding-right animate-left">
+            <a href="./polivirtual/calendario-academico.html"><img class="animate-top" src="./img/inicio/calendario-academico.png" alt=""></a>
+            <a href="./polivirtual/chat.html"><img class="animate-bottom" src="./img/inicio/chat.png" alt=""></a>
+            <a href="./polivirtual/proceso-de-admision.html"><img class="animate-bottom" src="./img/inicio/convocatoria.png" alt=""></a>
+            <a href="./polivirtual/poli-informate.html"><img class="animate-bottom" src="./img/inicio/poli-informate.png" alt=""></a>
+          </div>
+        <div class="restaurant-description animate-right">
+          <div class="global-headline">
+                <h2 class="sub-headline">
+                  <span class="first-letter">I</span>PN
+                </h2>
+                <h1 class="headline headline-dark">
+                 Polivirtual
+                </h1>
+                <br>
+                <!-- <div class="asterisk"><i class="fas fa-camera-retro"></i></div> -->
+              </div>
+              <p>
+                Es el sistema del Instituto Politécnico Nacional (IPN) mediante el cual se ofrece estudios de bachillerato, licenciatura, 
+                posgrado y servicios educativos complementarios en modalidades alternativas, innovadoras y flexibles con apoyos de tecnologías.
+            </p>
+              </p>
+              <a href="#" class="btn body-btn">Poli infórmate</a>
+        </div>
+        </div>
+      </div>
+     </section>
+<!--Discover you menu ends -->
+    
+<!-- Perfect blend -->
+
+<section class="perfect-blend between" data-aos="zoom-out-up" data-aos-delay="40">
+  <div class="container3">
+    <div class="global-headline">
+      <div class="animated-top">
+        <h2 class="sub-headline">
+          <span class="first-letter">P</span>olivirtual
+        </h2>
+      </div>
+      <div class="animate-bottom">
+        <!--h1 class="headline">
+          y Educación 4.0 en el IPN
+        </h1-->
+        <br>
+        <a href="./polivirtual/contacto-por-escuela.html" class="btn2">Contactos por escuela</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Perfect blend ends -->
+
+<section class="culinary-delight" data-aos="zoom-out-up" data-aos-delay="50">
+  <div class="container3">
+    <div class="restaurant-info">
+      <div class="restaurant-description padding-right animate-left">
+        <div class="global-headline">
+          <h2 class="sub-headline">
+            <span class="first-letter">I</span>PN
+          </h2>
+          <h1 class="headline headline-dark">
+            Polivirtual
+          </h1>
+          <br>
+          <!-- <div class="asterisk"><i class="fas fa-camera-retro"></i></div> -->
+        </div>
+        <p>
+          Descubre los recursos que está app tiene para ti, desde convocatorias, 
+          calendarios académicos y de actividades, así como información relevante 
+          del Polivirtual.
+        </p>
+        <a href="#" class="btn body-btn">Polivirtual</a>
+      </div>
+      <div class="image-group">
+        <a href="./polivirtual/acerca-de.html"><img class="animate-top" src="./img/inicio/acerca-de.png" alt=""></a>
+        <a href="./polivirtual/contacto-por-escuela.html"><img class="animate-bottom" src="./img/inicio/contactos-por-escuelas.png" alt=""></a>
+        <a href="./polivirtual/convocatoria-ns.html"><img class="animate-bottom" src="./img/inicio/convocatoria-nms.png" alt=""></a>
+        <a href="./polivirtual/convocatoria-nms.html"><img class="animate-bottom" src="./img/inicio/convocatoria-nivel-superior.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Culinary ends -->
+
+
+<!--section class="discover-our-story" data-aos="zoom-out-up" data-aos-delay="60">
+  <div class="container3">
+    <div class="restaurant-info">
+      <div class="restaurant-description padding-right animate-left">
+        <div class="global-headline">
+          <h2 class="sub-headline">
+            <span class="first-letter">E</span>je Rector de la AET:
+          </h2>
+          <h1 class="headline headline-dark">
+             Educación 4.0
+          </h1>
+          <div class="asterisk"><i class="fas fa-graduation-cap"></i></div>
+        </div>
+        <p>
+          El objetivo de este eje es formar al nuevo estudiante y docente politécnico por medio de la Educación 4.0, con planes
+          y programas de estudio pertinentes, vinculados con los diversos sectores, con valores éticos, una 
+          normatividad pertinente y los recursos e infraestructura apropiados, para atender las necesidades de 
+          cuadros humanos calificados para un México más justo, incluyente y democrático, así como para formar
+          el Talento 4.0 que requiere la 4RI.
+        </p>
+        <a href="./polivirtual/expertos.html" class="btn body-btn">Nuestros Expertos</a>
+        
+      </div>
+      <div class="restaurant-info-img animate-right">
+        <img src="./img/inicio/direccion.png" alt="">
+      </div>
+    </div>
+  </div>
+</section-->
+
+  
+  <!--BOOTSTRAP SCRIPTS-->
+  
+	<!-- Modal  SignUP-->
+	<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h6 class="modal-title" id="exampleModalLabel">Registro:
+			  Contraseña con al menos 6 caracteres
+			</h6>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<form id="signup-form">
+			  <div class="form-group">
+				  <input type="text" id="signup-email" class="form-control"
+				  placeholder="E-mail" required>
+			  </div>
+			  <div class="form-group">
+				  <input type="password" id="signup-password" class="form-control"
+				  placeholder="Contraseña" required>
+			  </div>
+			  <button type="submit" class="btn btn-primary">SignUp</button>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  
+  
+  
+	<!-- Modal  SignIn-->
+	<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h6 class="modal-title" id="exampleModalLabel">Ingresa a nuestra plataforma y mantente informado
+			</h6>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			  
+			<form id="login-form">
+				
+			  <!--div class="form-group">
+				  <input type="text" id="login-email" class="form-control"
+				  placeholder="E-mail" required>
+			  </div>
+			  <div class="form-group">
+				  <input type="password" id="login-password" class="form-control"
+				  placeholder="Contraseña" required>
+			  </div>
+			  
+			  <button type="submit" class="btn btn-info btn-block">Ingresa</button-->
+			  
+			  <button type="button" class="btn btn-secondary btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
+			  <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+
+<!-- 
+ <div class="contenedor1" data-aos="zoom-out-up" data-aos-delay="70">
+        <div id="contenido1">Contenido 1</div>
+        <div id="contenido2">Contenido 2</div>
+        <div id="contenido3">Contenido 3</div>
+        <div id="contenido4">Contenido 4</div>
+        <div id="contenido5">Contenido 5</div>
+        <div id="contenido6">Contenido 6</div>
+
+</div>
+-->
+
+   <!-- Inicia el footer-->
+   <footer>
+    <div class="footer-container">
+      <div class="left-col">
+        <img src="./img/logofooter.png" alt="" class="logo-banner">
+        <!--img src="./img/PreWolf.png" alt="" class="logo-banner1"-->
+        <!--
+        <div class="social-media-footer">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          -->
+          <!--a href="#"><i class="fab fa-linkedin-in"></i></a-->
+          <!--
+        </div>
+        -->
+        <p class="rights-text">© Instituto Politécnico Nacional</p>
+      </div>
+
+      <div class="right-col">
+        <h1>Contáctanos</h1>
+        <div class="border"></div>
+        <div class="social-media-footer">
+          <a href="mailto:polivirtualapp@gmail.com"><i class="far fa-envelope"></i></a>
+          <a href="tel:5557296000"><i class="fas fa-phone"></i></a>
+          <a href="https://www.google.com/maps/place/Unidad+Profesional+%E2%80%9CAdolfo+L%C3%B3pez+Mateos%E2%80%9D+-+IPN/@19.5006424,-99.143223,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c9f09748df:0x21b5b4b0a648d9aa!8m2!3d19.5006424!4d-99.1410343">
+          <i class="fas fa-map-marked-alt"></i></a>
+        </div>
+          </div>
+        </div>
+  </footer>
+
+<!-- Termina Footer -->
+
+<!-- Top scroll-->
+<a href="#" class="scrollTopTop"><i class="fa fa-chevron-up"></i></a>
+
+<!-- PWA -->
+<script src="./script.js"></script>
+
+<!-- Top scroll-->
+
+
+<!-- AOS Script-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1800,
+});
+</script>
+
+
+<!--BOOTSTRAPSCRIPTS-->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<!--BOOTSTRAPSCRIPTS NEW-->  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha256-fzFFyH01cBVPYzl16KT40wqjhgPtq6FFUB6ckN2+GGw=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"></script>
+
+<!--FIREBASE SCRIPTS-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCCNj5wghQ-XnrkhIRuq2d9m1WqGOMrZe8",
+    authDomain: "ipn-polivirtual.firebaseapp.com",
+    projectId: "ipn-polivirtual",
+    storageBucket: "ipn-polivirtual.appspot.com",
+    messagingSenderId: "859321637774",
+    appId: "1:859321637774:web:158754ee7da66463ca62df",
+    measurementId: "G-LRR7FSPSP9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  // FireStore base de datos
+  const fs = firebase.firestore();
+  firebase.analytics();
+</script>
+
+<!--TERMINA FIREBASE-->
+
+<!--CUSTOM CODE-->
+<script src="./registro.js"></script>
+<script src="./main/scripts.js"></script>
+<script src="./polivirtual/lib/jquery/jquery.min.js"></script>
+<script src="./polivirtual/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--LOCAL SCRIPTS-->
+	<!--Jquery js-->
+    <script src="./polivirtual/lib/jquery-3.0.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./polivirtual/lib/bootstrap.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="./polivirtual/lib/smooth-scroll.js"></script>
+    <!--Main js-->
+    <script src="./polivirtual/lib/main.js"></script>
+
+</body>
+</html>
+
+
+

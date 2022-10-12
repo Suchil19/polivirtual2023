@@ -1,0 +1,106 @@
+
+
+.hero{
+    width: 100%;
+    height: 35vh;
+    /*background: linear-gradient(to bottom, #6c1d45 , #a821643b), url("../../img/carreras/diseño-grafico/fondoprueba.jpeg") center no-repeat;
+    /*background: #3b3b3b;*/
+    background-size: cover;
+    /*minuto 40:45*/
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    /*font-family: 'Permanent Marker', cursive;*/
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .hero:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, #6c1d45 , #a821643b), url("../../img/calendarios/fondo.png") center no-repeat;
+    background-size: cover;
+    border-radius: 0 0 250% 250%/0 0 40% 40%;
+    z-index: -1;
+  
+  }
+  @media screen and (min-width: 700px){
+  
+    .hero{
+      width: 100%;
+      height: 45vh;
+      background:linear-gradient(to bottom, #6c1d45b9 , #a821643b), url("../../img/calendarios/fondo.png") center no-repeat;
+      /*background: #3b3b3b;*/
+      background-size: cover;
+      /*minuto 40:45*/
+      display: flex;
+      align-items: center;
+      text-align: center; 
+      /*font-family: 'Permanent Marker', cursive;*/
+      font-family: 'Roboto', sans-serif;
+    }
+  
+    .hero:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 45%;
+      background: url("../../img/calendarios/fondo.png") center no-repeat;
+      background-size: cover;
+      border-radius: 0 0 250% 250%/0 0 40% 40%;
+      z-index: -1;
+    }
+  
+  }
+  
+  
+    .sub-headline{
+      color: #ffffff;
+      /*font-weight: 100x;*/
+      line-height: 1;
+      /*letter-spacing: 2px;*/
+      opacity: 0;
+      animation: fadeDown 3.0s forwards;
+      animation-delay: .9s;
+    }
+  
+    .first-letter{
+      text-transform: uppercase;
+    }
+  
+    .headline{
+      color: #fff;
+      font-size: 23px;
+      font-family: 'Roboto', sans-serif;
+      /*font-weight: 900;*/
+      /*letter-spacing: .3rem;*/
+      /*margin-right: -.5rem;*/
+      
+      /* agregue este */
+      /*margin-bottom: 10%;*/
+      animation: scale 3s forwards;
+      
+    }
+  
+    @media screen and (min-width: 1200px){
+    
+      .sub-headline{
+      font-size: 2rem;
+      }
+    
+      .first-letter{
+        font-size: 2rem;
+      }
+    
+      .headline{
+        font-size: 2rem;
+        letter-spacing:  .2rem;
+      }
+  }
+  
+  

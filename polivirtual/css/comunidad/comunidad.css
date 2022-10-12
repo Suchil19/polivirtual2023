@@ -1,0 +1,1237 @@
+
+
+
+/* GALERIA CARRUSEL */
+
+/* GALERIA CARRUSEL */
+
+
+.contenedor2 {
+	max-width: 1100px;
+	width: 90%;
+  margin: auto;
+  /* aqui esta la separacion de div*/
+  padding: 2% 0%;
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+  max-width: 550px;
+  /*border-radius: 10px;*/
+}
+
+.contenido-principal__contenedor2 {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+  font-size: 19px;
+  margin-top: 10%;
+  color: #fff;
+  font-weight: 500;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+  color: #fff;
+  font-size: 17px;
+  /* lo agregue */
+  margin: 0;
+  padding: 0px 0px;
+  text-align: justify;
+  /*padding: 20px 20px;
+  background: linear-gradient(to right, #6c1d45 , #a82165);*/
+  border-radius: 10px;
+}
+
+
+/* --- --- CAROUSEL --- --- */
+
+.carousel__contenedor{
+  position: relative;
+}
+
+.carousel__contenedor i{
+  margin: none;
+  padding: 0%;
+}
+
+.carousel__anterior, .carousel__siguiente{
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: 30%;
+  cursor: pointer;
+  text-align: center;
+  background: none;
+  color: #fff;
+  opacity: 20%;
+  font-size: 27px;
+}
+
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+  opacity: 100%;
+}
+
+
+.carousel__anterior{
+  /*era 30 */
+  left: -30px;
+}
+
+.carousel__siguiente{
+  /*era 30*/
+  right: -30px;
+}
+
+
+.carousel__lista{
+  overflow: hidden;
+}
+
+.carousel__elemento{
+  text-align: center;
+}
+
+/* Cambiar el color de las bolitas */
+
+.carousel__indicadores .glider-dot{
+  margin-top: 4%;
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  opacity: .2;
+  border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover{
+  opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active{
+  opacity: 1;
+}
+
+/* --- --- MEDIA QUERIES --- --- */
+@media screen and (max-width: 800px) {
+  .contenedor2{
+    padding: 10% 5%;
+  }
+
+  .contenido-principal__imagen {
+    vertical-align: top;
+    margin-right: 0px;
+    width: 50%;
+    max-width: 550px;
+    border-radius: none;
+    margin-top: -30%;
+    /*box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);*/
+  }
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+  }
+  /* Agregados*/
+  .carousel__anterior{
+    /*era 30 */
+    left: -28px;
+  }
+  
+  .carousel__siguiente{
+    /*era 30*/
+    right: -28px;
+
+  }
+/* Agregados */ 
+
+
+}
+
+/* TERMINA EL CAROUSEL */
+
+
+
+
+/* Contenedor1 */
+
+.contenedor1{
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: aqua;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* aqui cambiamos el tamaño*/
+  grid-template-rows: repeat(3, 5fr);
+  /* la separacion de los div's*/
+  grid-column-gap: 10px;
+  /* la separacion de los divs de arriba */
+  grid-gap: 3%;
+  /*la altura de la seccion*/
+  height: 70vh;
+  margin-bottom: 10%;
+  grid-template-areas:
+  "contenido1 contenido2 contenido2"
+  "contenido1 contenido3 contenido3"
+  "contenido4 contenido5 contenido6";
+}
+
+
+#contenido1{
+  width: 100%;
+  height: 46vh;
+  background: url("../img/noticias/fondo/noticiasok.png") center no-repeat;
+  /*background: #3b3b3b;*/
+  background-size: cover;
+  /*minuto 40:45*/
+  display: flex;
+  align-items: center;
+  text-align: center; 
+
+  border-radius: 19px;
+  padding-top: 10px;
+  grid-area: contenido1;
+  display: grid;
+  grid-template-columns: repeat(3, 10px);
+  grid-template-rows: minmax(50px, 80px) 60px;
+  grid-gap: .2rem;
+  justify-content: center;
+  align-content:center;
+  transition: all 0.5s ease 0s;
+}
+
+
+#contenido2{
+  
+  width: 100%;
+  height: 22vh;
+  background: url("../img/logoIPNBlanco.png") center no-repeat;
+  /*background: #3b3b3b;*/
+  background-size: cover;
+  /*minuto 40:45*/
+  display: flex;
+  align-items: center;
+  text-align: center; 
+
+
+  border-radius: 19px;
+  padding-top: 10px;
+  grid-area: contenido2;
+  transition: all 0.5s ease 0s;
+}
+
+#contenido3{
+  width: 100%;
+  height: 22vh;
+  background: url("../img/logoIPNBlanco.png") center no-repeat;
+  /*background: #3b3b3b;*/
+  background-size: cover;
+  /*minuto 40:45*/
+  display: flex;
+  align-items: center;
+  text-align: center; 
+
+  border-radius: 19px;
+  padding-top: 10px;
+  grid-area: contenido3;
+  transition: all 0.5s ease 0s;
+}
+
+#contenido4{
+  width: 100%;
+  height: 23vh;
+  background: url("../img/logoIPNBlanco.png") center no-repeat;
+  /*background: #3b3b3b;*/
+  background-size: cover;
+  /*minuto 40:45*/
+  display: flex;
+  align-items: center;
+  text-align: center; 
+
+  border-radius: 19px;
+  padding-top: 10px;
+  grid-area: contenido4;
+  transition: all 0.5s ease 0s;
+}
+
+#contenido5{
+  width: 100%;
+  height: 23vh;
+  background: url("../img/logoIPNBlanco.png") center no-repeat;
+  /*background: #3b3b3b;*/
+  background-size: cover;
+  /*minuto 40:45*/
+  display: flex;
+  align-items: center;
+  text-align: center; 
+
+  border-radius: 19px;
+  padding-top: 10px;
+  grid-area: contenido5;
+  transition: all 0.5s ease 0s;
+}
+
+#contenido6{
+  width: 100%;
+  height: 23vh;
+  background: url("../img/logoIPNBlanco.png") center no-repeat;
+  /*background: #3b3b3b;*/
+  background-size: cover;
+  /*minuto 40:45*/
+  display: flex;
+  align-items: center;
+  text-align: center; 
+
+  border-radius: 19px;
+  padding-top: 10px;
+  grid-area: contenido6;
+  transition: all 0.5s ease 0s;
+}
+
+
+#contenido1:hover{
+  transform: translateY(-9px);
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+}
+
+#contenido2:hover{
+  transform: translateY(-9px);
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+}
+
+#contenido3:hover{
+  transform: translateY(-9px);
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+}
+
+#contenido4:hover{
+  transform: translateY(-9px);
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+}
+
+#contenido5:hover{
+  transform: translateY(-9px);
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+}
+
+#contenido6:hover{
+  transform: translateY(-9px);
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+}
+
+
+
+/* BLOG */
+
+.container4{
+  width: 1200px;
+  margin: 20px auto;
+  columns: 3;
+  column-gap: 40px;
+}
+
+.container4 .box{
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 14px;
+  background: linear-gradient(to right,#641c40 , #751e4a);
+  overflow: hidden;
+  color: #f8f8f8;
+  break-inside: avoid;
+  border-radius: 20px;
+}
+
+.box{
+  transition: all 0.5s ease 0s;
+}
+
+.box:hover{
+  transform: translateY(-3px);
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+}
+
+.container4 .box img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.container4 .box h2{
+  margin: 10px 0 0;
+  padding: 0px;
+  font-size: 19px;
+}
+
+.container4 .box p{
+  margin: 0;
+  padding: 0 0 10px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+@media (max-width: 1200px){
+  .container4{
+    columns: 2;
+    width: calc(100% - 40px);
+    padding: 20px 20px 20px 0;
+  }
+}
+
+@media (max-width: 768px){
+  .container4{
+    columns: 2;
+  }
+}
+
+@media (max-width: 480px){
+  .container4{
+    columns: 1;
+    margin: 0 30px;
+  }
+}
+
+/* TERMINA BLOG */
+
+
+
+/* SCROLL TOP TOP */
+
+.scrollTopTop{
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.479);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 30px;
+  right: 4.5%;
+  bottom: 5%;
+  transition: background 0.5s;
+  /* le tuve que poner z-index 1 por que la imagen en las tarjetas de contacto tenia 1*/
+  z-index: 1;
+}
+
+.scrollTopTop:hover{
+  background: #00f7ff;
+  
+}
+
+@media (max-width: 1200px) {
+  .scrollTopTop{
+    bottom: 15px;
+  }
+}
+
+.scrollTopTop:focus {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+.scrollTopTop:hover {
+  /* aqui se cambia el boton para ir arriba*/
+  background: linear-gradient(to right, #6c1d45 , #a82165);
+  color: #fff;
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+  background: linear-gradient(to right,#6c1d45 , #a82165);
+  padding: 20px 0;
+  }
+  
+  .footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .logo-banner{
+    width: 420px;
+    box-shadow: none;
+  }
+  
+  .logo-banner1{
+    width: 70px;
+    box-shadow: none;
+  }
+  
+  .logo-banner:hover{
+    transform: none;
+    transition: none;
+    box-shadow: none;
+  }
+  
+  .logo-banner1:hover{
+    transform: none;
+    transition: none;
+    box-shadow: none;
+  }
+  
+  .social-media-footer{
+    margin: 15px 0px;
+    /* le puse margen para centrarlo*/
+    margin-left: 15px;
+  }
+  
+  .social-media-footer a{
+    color: #ffffff;
+    margin: auto;
+    font-size: 23px;
+    letter-spacing: 1rem;
+    transition: .3s linear;
+  }
+  
+  .social-media-footer a:hover{
+    color: #ff0080;
+  }
+  
+  .right-col h1{
+    /* agregue el relative*/
+    position: relative;
+    font-size: 19px;
+    color: #ffffff;
+    margin-left: 12%;
+    
+    /*aqui separe la linea*/
+    margin-bottom: 10px;
+  }
+  
+  .rights-text{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1px;
+    font-size: 14px;
+  }
+  .frase-footer{
+    color: #ffffff;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  .border{
+      /* aqui se cambia el tamaño de la rayita*/
+    width: 100px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 30px;
+    margin-left: 23px;
+    margin: none;
+  
+  }
+  
+  .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 19px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+  }
+  
+  .btn4{
+    padding: 14px 40px;
+    font-size: 16px;
+    color: #ffffff;
+    background: #00e1ff;
+    /*background: #fc5c65;*/
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 60%;
+    cursor: pointer;
+    transition: opacity .3s linear;
+  }
+  
+  .btn4:hover{
+    opacity: 1;
+    background: #8a00c0;
+  }
+  
+  .page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width:960px) {
+  
+    /* aqui cambiamos la posicion de las columnas cualdo se vuelve responsivo*/
+     .footer-container{
+       max-width: 600px;
+     }
+     .right-col{
+       width: 100%;
+       margin-bottom: 0px;
+       text-align: center;
+     }
+
+     .right-col h1{
+      /* agregue el relative*/
+      position: relative;
+      font-size: 17px;
+      color: #ffffff;
+      margin: auto;
+      margin-bottom: 10px;
+     }
+   
+     .border{
+       margin: auto;
+     }
+   
+     .left-col{
+       width: 100%;
+       text-align: center;
+     }
+   }
+   
+   @media screen and (max-width:700px){
+     .btn4{
+       padding: 14px 50px;
+       color: #ffffff;
+       background: linear-gradient(to right, #6c1d45 , #018a8f);
+       margin: 0;
+       width: 95%;
+       margin-top: 20px;
+       margin-left: 5%;
+       }
+       
+       .logo-banner{
+         width: 370px;
+         box-shadow: none;
+         transform: none;
+       }
+       
+       .logo-banner1{
+         width: 70px;
+         box-shadow: none;
+       }
+       
+   }
+
+
+
+
+
+/* boton y social media para las tarjetas de contacto */
+
+.box a{
+  display: inline-block;
+  /* Si quitas el margin left queda como estaba originalmente */
+  margin-left: 1px;
+  /*  */
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* aqui cambiamos las dimensiones del boton */
+  padding: 10px 20px;
+  /* boton de las tarjetas */
+  background: linear-gradient(to right, #6c1d45 , #a82165);
+  border-radius: 30px;
+	text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  transform: translateY(-1px);
+}
+
+.box a:hover{
+  transform: translateY(-1px);
+  box-shadow: .5rem .5rem 2rem rgb(51, 51, 51);
+}
+
+
+
+
+
+/* CSS para las tarjetas de contacto de perfil */
+
+
+.container-cards{
+  position: relative;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* asi lo centre*/
+  margin: 0 auto;
+  /*margin-bottom: 10%;*/
+}
+
+
+.container-cards .card-contact{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*aqui cambiamos el margen*/
+  margin: 1px 0;
+  margin-bottom: 5%;
+}
+
+
+.container-cards .card-contact:nth-child(odd)
+{
+  flex-direction: row;
+}
+
+.container-cards .card-contact:nth-child(even)
+{
+  flex-direction: row-reverse;
+}
+
+.container-cards .card-contact .imgBx{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  /*aqui eran 25px*/
+  left: 25px;
+  z-index: 1;
+  /*background: #ff0;*/
+}
+
+.container-cards .card-contact:nth-child(even) .imgBx{
+  left: -25px;
+}
+
+
+/* Puse la transicion en la clase de la imagen ya quiere tiene que estar
+esa propiedad ahi para que herede sus atributos a la imagen del :hover,
+en resunen pone esto primero en la clase donde lo ocupes */ 
+.imgBx{
+  transition: all 0.5s ease 0s;
+}
+
+/* esto lo agregue para que la imagen tuviera sombra , el efecto glow */
+.imgBx:hover{
+  transform: translateY(-0px);
+  transition: all 0.5s ease 0s;
+/* aqui mira lo vuelves a poner */
+  /*box-shadow: .5rem .5rem 2rem rgb(34, 34, 34);*/
+}
+
+.container-cards .card-contact .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* con lo siguiente se recorta la imagen*/
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.container-cards .card-contact .contentBx{
+  position: relative;
+  right: 25px;
+  /* aqui cambiamos el tamaño de la imagen*/
+  /* el ancho del recuadro negro le pondre 700*/
+  width: 500px;
+  height: 400px;
+  background: linear-gradient(to right,#6c1d45 , #a82165);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px 20px 100px;
+  transition: all 0.5s ease 0s;
+}
+
+.container-cards .card-contact:nth-child(even) .contentBx{
+  right: -25px;
+  padding: 20px 100px 20px 60px;
+}
+
+.imgBx{
+  /*border-radius: 5%;*/
+  box-shadow: 3px 3px 1rem rgb(0, 0, 0);
+}
+
+.contentBx{
+  /*border-radius: 5%;*/
+  box-shadow: 3px 3px 1rem rgb(0, 0, 0);
+  transition: all 0.5s ease 0s;
+}
+
+/*.contentBx:hover{
+  box-shadow: .5rem .5rem 2rem rgb(0, 247, 255); 
+}*/
+
+
+.container-cards .card-contact .contentBx:before{
+  content: '';
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  background: #6c1d45;
+  z-index: -1;
+}
+
+.container-cards .card-contact .contentBx h2{
+  color: #fff;
+  font-size: 23px;
+}
+
+.container-cards .card-contact .contentBx p{
+  color: #fff;
+  margin-top: 10px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.container-cards .card-contact .contentBx a{
+  display: inline-block;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  text-align: justify;
+ 
+
+}
+/* aqui si le cambio a 1200 se ajusta a cualquier dispositivo*/
+@media (max-width: 1000px){
+  .container-cards .card-contact{
+    margin-top: 5%;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 25px 25px;
+  }
+
+  .card-contact:hover{
+    box-shadow: .5rem .5rem 2rem rgb(37, 37, 37);
+  }
+
+  .imgBx:hover{
+    transform: translateY(0px);
+    /*
+    transition: all 0.5s ease 0s;
+    box-shadow: .5rem .5rem 2rem rgb(0, 247, 255);
+    */
+  }
+
+  .card-contact:hover{
+    /*transform: translateY(-10px);*/
+    transition: all 0.5s ease 0s;
+    /*box-shadow: .5rem .5rem 2rem rgb(234, 0, 255);*/
+  }
+
+  .container-cards .card-contact .imgBx{
+    width: 100%;
+    /*aqui cambiamos la altura de la imagen*/
+    height: 300px;
+    left: 0;
+  }
+  .container-cards .card-contact .contentBx{
+    width: 100%;
+    height: auto;
+    right: 0;
+    padding: 30px;
+    text-align: center;
+  }
+  .container-cards .card-contact .contentBx::before{
+    top: 0;
+    bottom: 0;
+  }
+
+  .container-cards .card-contact:nth-child(even) .imgBx{
+    left: 0px;
+  }
+  
+  .container-cards .card-contact:nth-child(even) .contentBx{
+    right: 0px;
+    padding: 30px;
+  }
+
+}
+
+/* ---x--- */
+
+
+/* LINEA DE SEPARACION */
+
+.border1{
+  width: 30%;
+  height: 3px;
+  background: #fff;
+  margin: 15px 0px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 770px){
+
+  .border1{
+    width: 50%;
+    height: 4px;
+    background: #fff;
+    margin: 15px 0px;
+    border-radius: 30px;
+  }
+ 
+}
+
+/* */
+
+
+
+
+
+
+/*Start portfolio*/
+
+
+.container1{
+  max-width: 1200px;
+	width: 90%;
+  margin: auto;
+  /* aqui esta la separacion de div*/
+  padding: 0% 0%;
+  margin-top: -1%;
+}
+
+
+.portafolio-img .img{
+  border-radius: 10px;
+}
+
+
+.portafolio-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portafolio-item-last-child{
+  margin-bottom: 0;
+}
+
+.portafolio-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  
+}
+
+.portafolio-item-last-child{
+  margin-bottom: 0;
+}
+/* aqui se cambia el tamaño de la imagen de perfil */
+
+.portafolio-description{
+ font-size: '';
+}
+
+.portafolio-description h1{
+  font-size: 19px;
+  font-weight: 91;
+  margin: 10px 25px;
+
+}
+
+.portafolio-description h6{
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 91;
+  color: #fff;
+
+}
+
+/* aqui le puse el fondo a las letras de la descripcion*/
+
+.portafolio-description p{
+  /*background: linear-gradient(to right,#6c1d45 , #a82165);*/
+  margin: 10px 10px;
+  position: relative;
+  padding: 1rem;
+  border-radius: .8rem;
+  font-size: 17px;
+}
+
+
+/* aqui esta el link de ver detalles 1:16:74 */
+.portafolio-description .cta{
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #00e1ff;
+  transition: color 650ms;
+}
+/* aqui cambiamos el segundo color de los detalles 1:17;50*/
+.portafolio-description .cta:hover{
+  color: #ffe600;
+}
+/*End services*/
+
+
+
+
+/*End contact*/
+
+
+
+
+/*Start media queries*/
+
+@media screen and (max-width: 770px){
+
+  .landing-text h1{
+      font-size: 19px;
+  }
+  .landing-text h6{
+      font-size: 17px;
+  }
+ 
+}
+
+@media screen and (max-width: 600px){
+
+  .landing-text h1{
+      font-size: 19px;
+  }
+  .landing-text h6{
+      font-size: 17px;
+  }
+
+  .profile-img{
+      margin: 0 0 7rem 0;
+  }
+  .portafolio-item{
+      flex-direction: column;
+  }
+  .portafolio-img{
+      margin: 0 6% 2rem 6%;
+  }
+  .portafolio-description{
+      margin: 0;
+      order: 2;
+  }
+
+}
+
+/*End media queries*/
+
+/* Nuevos botones */
+
+.btn2{
+  padding: 5px 15px;
+  background: linear-gradient(to right,#6c1d45 , #a82165);
+  border-radius: 1rem;
+  margin-right: 3%;
+  text-transform: uppercase;
+  /* aqui esrta el color de las letras del boton*/
+  color: #fff;
+  font-size: 14px;
+  transition: all .5s;
+}
+.btn2:hover{
+  /*transform: translateY(-2px);*/
+  box-shadow: .5rem .5rem 2rem #a82165;
+}
+
+.btn2:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* diseño del boton que se mueve */
+underlined-a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-bottom: 0.15em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.2em 0 aqua;
+  transition: 0.2s;
+}
+.underlined-a:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0 -2em 0 aqua;
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.brk-btn {
+  position: relative;
+  margin-left: auto;
+  padding: 12px 20px;
+  background: none;
+  color: rgb(255, 255, 255);
+  /*text-transform: uppercase;*/
+  text-decoration: none;
+  border: 0.2em solid rgb(255, 255, 255);
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+}
+
+
+.brk-btn:hover {
+  background: linear-gradient(to right, #005e83, #00fff2);
+}
+
+
+.brk-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: rgb(65, 65, 65);
+  height: 0.3em;
+  right: 20%;
+  top: -0.21em;
+  transform: skewX(-45deg);
+  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: rgb(65, 65, 65);
+  height: 0.3em;
+  left: 20%;
+  bottom: -0.25em;
+  transform: skewX(45deg);
+  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn:hover::before {
+  right: 80%;
+}
+.brk-btn:hover::after {
+  left: 80%;
+}
+
+/* ***/
+
+
+
+
+/* Video responsive */
+.video-container { 
+  position: relative;
+   padding-bottom: 33.33%; 
+   padding-top: 10px; 
+   height: 0; 
+   overflow: hidden; 
+   margin-bottom: 1%;
+  }
+
+.video-container iframe, .video-container object, .video-container embed {
+   position: absolute; 
+   top: 0; 
+   left: 20%; 
+   right: 20%;
+   width: 54.2%; 
+   height: 90%; 
+  }
+
+  iframe{
+    box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+  }
+
+
+  @media only screen and (max-width: 1000px){
+    .video-container { 
+      position: relative;
+       padding-bottom: 56.25%; 
+       padding-top: 10px; 
+       height: 0; 
+       overflow: hidden; 
+       margin: 1% 5% 7% 5%;
+      }
+    
+    .video-container iframe, .video-container object, .video-container embed {
+       position: absolute; 
+       top: 0; 
+       left: 0%; 
+       right: 0%;
+       width: 100%; 
+       height: 86.2%; 
+      }
+    
+  }
+  /*Termina video responsive*/
+
+
+  .contenedor3 {
+    max-width: 1200px;
+    width: 75%;
+    margin: auto;
+    /* aqui esta la separacion de div*/
+    margin-bottom: 4%;
+  }
+
+  @media only screen and (max-width: 1000px){
+    .contenedor3 {
+      max-width: 1200px;
+      width: 90%;
+      margin: auto;
+      /* aqui esta la separacion de div*/
+      margin-bottom: 10%;
+    }
+  }

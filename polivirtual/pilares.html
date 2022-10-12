@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pilares</title>
+    <link rel="shortcut icon" type="image/png" href="../img/Logo_e4-0.png">
+    <!--PWA-->
+    <link rel="manifest" href="./manifest.json">
+    <!--BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+   <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Estilos Internos-->
+        <link rel="stylesheet" type="text/css" href="./css/vendor.css">
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <link href="./css/banners/plataformas.css" rel="stylesheet" type="text/css">
+        <link href="../css/bootstrap_card.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <!--Owl2-->
+	</head>
+  <body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+    <div id="preloader"></div>
+	
+	<!-- Start Header Area -->
+  <header class="header-area">
+    <!-- main header start -->
+    <div class="main-header d-none d-lg-block">
+      <!-- header middle area start -->
+      <div class="header-main-area sticky">
+          <div class="container">
+              <div class="row align-items-center position-relative">
+                  <!-- start logo area -->
+                  <div class="col-lg-2">
+                      <div class="logo">
+                          <a href="../index.html">
+                              <img src="../img/Logo_e4-Blanco.png" alt="Logo 4.0 | Luis">
+                          </a>
+                      </div>
+                  </div>
+                  <!-- start logo area -->
+                  <!-- main menu area start -->
+                    <div class="col-lg-8 position-static">
+                        <div class="main-menu-area">
+                            <div class="main-menu">
+                                <!-- main menu navbar start -->
+                                <nav class="desktop-menu">
+                                    <ul>
+                                        <li class="active"><a href="../index.html">Inicio</a>
+                                        </li>
+                                    <!--CALENDARIOS-->    
+                                    <li><a href="#">Calendarios<i class="fa fa-angle-down"></i></a>
+                                      <ul class="dropdown">
+                                          <li><a href="./calendario-academico.html">Calendario Académico</a>
+                                          </li>
+                                          <li><a href="./calendario-de-actividades-de-nivel-medio-superior.html">Calendario de Actividades de Nivel Medio Superior</a>
+                                          </li>
+                                          <li><a href="./calendario-enba.html">Calendario ENBA</a>
+                                          </li>
+                                      </ul>
+                                  </li>  
+                                  <!--CHAT-->   
+                                      <li class="active"><a href="./chat.html">Chat</a></li>
+                                  <!--COMUNIDAD-->   
+                                      <li class="static"><a href="#">Comunidad<i class="fa fa-angle-down"></i></a>
+                                        <ul class="megamenu dropdown">
+                                          <li class="mega-title"><a href="#">Polivirtual</a>
+                                            <ul>
+                                              
+                                              <br>
+                                              <li class="menu-item-has-children"><a href="./acerca-de.html">Acerca de</a>
+                                            </ul>
+                                          </li>
+                                          <li class="mega-title"><a href="#">Perfiles</a>
+                                            <ul>
+                                              <br>
+                                              <li class="menu-item-has-children"><a href="./aspirantes.html">Aspirante</a>
+                                              <li class="menu-item-has-children"><a href="./alumnos.html">Alumnos</a>
+                                              <li class="menu-item-has-children"><a href="./egresados.html">Egresados</a>
+                                            </ul>
+                                            <br>
+                                        </li>
+                                        <li class="mega-title"><a href="#">Comunidad Polivirtual</a>
+                                          <ul>
+                                            <li class="menu-item-has-children"><a href="./contacto-por-escuela.html">Contactos Por Escuela</a>
+                                            <li class="menu-item-has-children"><a href="./poli-informate.html">Poli-infórmate</a>       
+                                          </ul>
+                                        </li>
+                                        <!--PLATAFORMAS-->
+                                        <li class="mega-title"><a href="#">Plataformas</a>
+                                          <ul>
+                                              <li class="menu-item-has-children"><a href="./nms.html">NMS</a>
+                                              <li class="menu-item-has-children"><a href="./bgp.html">BGP</a>
+                                              <li class="menu-item-has-children"><a href="./ns.html">NS</a>
+                                              <li class="menu-item-has-children"><a href="./pilares.html">Pilares</a>
+                                        </ul>
+                                      </li>  
+                                        </ul>
+                                    </li>      
+                                    <!--CONVOCATORIA-->
+                                    <li><a href="#">Convocatoria<i class="fa fa-angle-down"></i></a>
+                                      <ul class="dropdown">
+                                          <li><a href="./proceso-de-admision.html">Proceso de admisión</a></li>
+                                          <li><a href="./convocatoria-ns.html">Convocatoria NS</a></li>
+                                          <li><a href="./convocatoria-nms.html">Convocatoria NMS</a></li>
+                                        </ul>
+                                      </li>
+                                      <!--OFERTA EDUCATIVA-->
+                                      <li class="static"><a href="#">Oferta Educativa<i class="fa fa-angle-down"></i></a>
+                                        <ul class="megamenu dropdown">
+                                          <li class="mega-title"><a href="./especialidades-medio-superior.html">Medio Superior Modalidad <br>No escolarizada<!--BTBD--></a>
+                                            <ul>
+                                              <!--li class="menu-item-has-children"><a href="#NoEscolarizada"> Todas las especialidades</a-->
+                                              <br>
+                                                <li class="menu-item-has-children"><a href="./bachillerato-general-polivirtual.html">Bachillerato General Polivirtual</a>
+                                                <li class="menu-item-has-children"><a href="./tecnico-en-administracion.html">Administración</a>
+                                                <li class="menu-item-has-children"><a href="./administracion-de-recursos-humanos.html">Administración de<br> Recursos Humanos</a>
+                                                <li class="menu-item-has-children"><a href="./comercio-internacional.html">Comercio Internacional</a>
+                                                <li class="menu-item-has-children"><a href="./construccion.html">Construcción</a>
+                                                <li class="menu-item-has-children"><a href="./desarrollo-de-software.html">Desarrollo de Software</a>
+                                                <li class="menu-item-has-children"><a href="./diagnostico-y-mejoramiento-ambiental.html">Diagnóstico y Mejoramiento<br> Ambiental</a>
+                                                <li class="menu-item-has-children"><a href="./diseño-grafico-digital.html">Diseño Gráfico Digital</a>
+                                                <li class="menu-item-has-children"><a href="./informatica.html">Informática</a>
+                                                <li class="menu-item-has-children"><a href="./mercadotecnia.html">Mercadotecnia</a>
+                                                <li class="menu-item-has-children"><a href="./nutricion-humana.html">Nutrición Humana</a>
+                                                <li class="menu-item-has-children"><a href="./quimico-farmaceutico.html">Químico Farmacéutico</a>
+                                                <li class="menu-item-has-children"><a href="./sistemas-computacionales.html">Sistemas Computacionales</a>
+                                              </ul>
+                                              <br>
+                                          </li>
+                                          <li class="mega-title"><a href="./especialidades-medio-superior.html">Medio Superior Modalidad Mixta</a>
+                                            <ul>
+                                              <br>
+                                                <li class="menu-item-has-children"><a href="./computacion.html">Computación</a>
+                                                <li class="menu-item-has-children"><a href="./soldadura-industrial.html">Soldadura Industrial</a>
+                                                <li class="menu-item-has-children"><a href="./telecomunicaciones.html">Telecomunicaciones</a>
+                                            </ul>
+                                              <br>   
+                                          </li>
+                                          <li class="mega-title"><a href="./especialidades-nivel-superior.html">Nivel Superior Modalidad <br>No Escolarizada</a>
+                                            <ul>
+                                              <br>
+                                                <li class="menu-item-has-children"><a href="./administracion-y-desarrollo.html">Administración y Desarrollo</a>
+                                                <li class="menu-item-has-children"><a href="./archivonomia.html">Archivonomía</a>
+                                                <li class="menu-item-has-children"><a href="./biblioteconomia.html">Biblioteconomía</a>
+                                                <li class="menu-item-has-children"><a href="./licenciatura-en-comercio-internacional.html">Comercio Internacional</a>
+                                                <li class="menu-item-has-children"><a href="./contador-publico.html">Contador Público</a>
+                                                <li class="menu-item-has-children"><a href="./contaduria-y-finanzas.html">Contaduría y Finanzas</a>
+                                                <li class="menu-item-has-children"><a href="./negocios-internacionales.html">Negocios Internacionales</a>
+                                                <li class="menu-item-has-children"><a href="./relaciones-comerciales.html">Relaciones Comerciales</a>
+                                            </ul>
+                                            <br>
+                                            <ul>
+                                              <li class="mega-title"><a href="./especialidades-nivel-superior.html">Superior Modalidad Mixta</a>
+                                              <li class="menu-item-has-children"><a href="./turismo.html">Turismo</a>
+                                              </ul>
+                                            </li>
+                                            <li class="mega-title"><a href="#">Posgrado</a>
+                                              <ul>
+                                                <li class="menu-item-has-children"><a href="./especialidades-posgrado.html">Especialidades Posgrado</a>
+                                              </ul>
+                                              <br>
+                                            </li> 
+                                          </ul>
+                                      </li>      
+                                    </ul>
+                                </nav>
+                                <!-- main menu navbar end -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main menu area end -->
+                </div>
+            </div>
+        </div>
+        <!-- header middle area end -->
+    </div>
+    <!-- main header start -->
+    <!-- mobile header start -->
+    <div class="mobile-header d-lg-none d-md-block sticky">
+        <!--mobile header top start -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="mobile-main-header">
+                        <div class="mobile-logo">
+                            <a href="../index.html">
+                                <img src="../img/Logo_e4-Blanco.png" alt="IPN | Polivirtual">
+                            </a>
+                        </div>
+                        <div class="mobile-menu-toggler">
+                            <div class="mobile-menu-btn">
+                                <div class="off-canvas-btn">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile header top start -->
+    </div>
+    <!-- mobile header end -->
+  </header>
+  <!-- end Header Area -->
+  <!-- off-canvas menu start -->
+  <aside class="off-canvas-wrapper">
+    <div class="off-canvas-overlay"></div>
+    <div class="off-canvas-inner-content">
+        <div class="btn-close-off-canvas">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="off-canvas-inner">
+            <!-- mobile menu start -->
+            <div class="mobile-navigation">
+                <!-- mobile menu navigation start -->
+                <nav>
+                    <ul class="mobile-menu">
+                        <li class="menu-item-has-children"><i class="fas fa-home"></i>&nbsp;<a href="../index.html">Inicio</a>
+                        <li class="menu-item-has-children"><i class="fas fa-user"></i>&nbsp;<a href="./aspirantes.html">Aspirante</a>
+                        <li class="menu-item-has-children"><i class="fas fa-user-friends"></i>&nbsp;<a href="./alumnos.html">Alumnos</a>
+                        <li class="menu-item-has-children"><i class="fas fa-graduation-cap"></i>&nbsp;<a href="./egresados.html">Egresados</a>
+                          <!--OFERTA EDUCATIVA-->
+                          <li class="menu-item-has-children"><i class="fas fa-book-reader"></i>&nbsp;<a href="#">Oferta Educativa</a>
+                            <ul class="megamenu dropdown">
+                              <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Medio Superior</a>
+                                <ul class="dropdown">
+                                  <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">No Escolarizada</a>
+                                    <ul class="dropdown">
+                                      <li class="menu-item-has-children"><a href="./bachillerato-general-polivirtual.html">Bachillerato General Polivirtual</a>
+                                      <li class="menu-item-has-children"><a href="./tecnico-en-administracion.html">Administración</a>
+                                      <li class="menu-item-has-children"><a href="./administracion-de-recursos-humanos.html">Administración de Recursos Humanos</a>
+                                      <li class="menu-item-has-children"><a href="./comercio-internacional.html">Comercio Internacional</a>
+                                      <li class="menu-item-has-children"><a href="./construccion.html">Construcción</a>
+                                      <li class="menu-item-has-children"><a href="./desarrollo-de-software.html">Desarrollo de Software</a>
+                                      <li class="menu-item-has-children"><a href="./diagnostico-y-mejoramiento-ambiental.html">Diagnóstico y Mejoramiento Ambiental</a>
+                                      <li class="menu-item-has-children"><a href="./diseño-grafico-digital.html">Diseño Gráfico Digital</a>
+                                      <li class="menu-item-has-children"><a href="./informatica.html">Informática</a>
+                                      <li class="menu-item-has-children"><a href="./mercadotecnia.html">Mercadotecnia</a>
+                                      <li class="menu-item-has-children"><a href="./nutricion-humana.html">Nutrición Humana</a>
+                                      <li class="menu-item-has-children"><a href="./quimico-farmaceutico.html">Químico Farmacéutico</a>
+                                      <li class="menu-item-has-children"><a href="./sistemas-computacionales.html">Sistemas Computacionales</a>
+                                  </li>
+                                </ul>
+                              </ul>
+                              <ul class="dropdown">
+                                <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Mixta</a>
+                                  <ul class="dropdown">
+                                    <li class="menu-item-has-children"><a href="./computacion.html">Computación</a>
+                                    <li class="menu-item-has-children"><a href="./soldadura-industrial.html">Soldadura Industrial</a>
+                                    <li class="menu-item-has-children"><a href="./telecomunicaciones.html">Telecomunicaciones  </a>
+                                </li>
+                              </ul>
+                              <li class="mega-title menu-item-has-children"><a href="./especialidades-medio-superior.html">Todas las especialidades</a>
+                            </ul>
+                           </li>
+                           <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Superior</a>
+                            <ul class="dropdown"> 
+                              <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">No Escolarizada</a>
+                                <ul class="dropdown">
+                                  <li class="menu-item-has-children"><a href="./administracion-y-desarrollo.html">Administración y Desarrollo</a>
+                                  <li class="menu-item-has-children"><a href="./archivonomia.html">Archivonomía</a>
+                                  <li class="menu-item-has-children"><a href="./biblioteconomia.html">Biblioteconomía</a>
+                                  <li class="menu-item-has-children"><a href="./licenciatura-en-comercio-internacional.html">Comercio Internacional</a>
+                                  <li class="menu-item-has-children"><a href="./contador-publico.html">Contador Público</a>
+                                  <li class="menu-item-has-children"><a href="./contaduria-y-finanzas.html">Contaduría y Finanzas</a>
+                                  <li class="menu-item-has-children"><a href="./negocios-internacionales.html">Negocios Internacionales</a>
+                                  <li class="menu-item-has-children"><a href="./relaciones-comerciales.html">Relaciones Comerciales</a>
+                              </li>
+                              </ul>
+                            </ul>
+                                <ul class="dropdown">
+                                  <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Mixta</a>
+                                    <ul class="dropdown">
+                                      <li class="menu-item-has-children"><a href="./turismo.html">Turismo</a>
+                                  </li>
+                                </ul>
+                                    <li class="mega-title menu-item-has-children"><a href="./especialidades-nivel-superior.html">Todas las especialidades</a>
+                                </ul>
+                          </li>
+                          <li class="mega-title menu-item-has-children"><a href="./especialidades-posgrado.html">Posgrado</a>
+                          </li>
+                            </ul>
+                        </li>                      
+                        <!--Calendario Polivirtual-->
+                        <li class="menu-item-has-children"><i class="far fa-calendar-alt"></i>&nbsp;<a href="#">Calendarios</a>
+                          <ul class="megamenu dropdown">
+                            <li class="menu-item-has-children"><a href="./calendario-academico.html">Calendario Académico</a>
+                            <li class="menu-item-has-children"><a href="./calendario-de-actividades-de-nivel-medio-superior.html">Calendario de actividades de nivel medio superior</a>
+                            <li class="menu-item-has-children"><a href="./calendario-enba.html">Calendario ENBA</a>
+                          </ul>
+                        </li>
+                        <!--Comunidad Polivirtual-->
+                          <li class="menu-item-has-children"><i class="far fa-id-badge"></i>&nbsp;<a href="#">Comunidad Polivirtual</a>
+                            <ul class="megamenu dropdown">
+                              <li class="menu-item-has-children"><a href="./acerca-de.html">Acerca de</a>
+                              <li class="menu-item-has-children"><a href="./contacto-por-escuela.html">Contactos por escuela</a>
+                              <li class="menu-item-has-children"><a href="./poli-informate.html">Poli-infórmate</a>
+
+                                <li class="mega-title menu-item-has-children"><i class="fas fa-caret-right"></i>&nbsp;<a href="#">Plataformas</a>
+                                    <ul class="dropdown">
+                                      <li class="menu-item-has-children"><a href="./nms.html">NMS</a>
+                                      <li class="menu-item-has-children"><a href="./bgp.html">BGP</a>
+                                      <li class="menu-item-has-children"><a href="./ns.html">NS</a>
+                                      <li class="menu-item-has-children"><a href="./pilares.html">Pilares</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--PROCESO DE ADMISION-->
+                        <li class="menu-item-has-children"><i class="fas fa-sync-alt"></i>&nbsp;<a href="#">Proceso de Admisión</a>
+                          <ul class="megamenu dropdown">
+                            <li class="menu-item-has-children"><a href="./proceso-de-admision.html">Proceso de admisión</a>
+                            <li class="menu-item-has-children"><a href="./convocatoria-ns.html">Convocatoria NS</a></li>
+                            <li class="menu-item-has-children"><a href="./convocatoria-nms.html">Convocatoria NMS</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item-has-children"><i class="fas fa-headset"></i>&nbsp;<a href="./chat.html">Ponte en contacto ahora</a>
+                        <br>
+                        <li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signinModal"><i class="far fa-edit"></i>&nbsp;Ingresa | Regístrate</a></li>
+                        <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+                        <li style="display: none;" class="logged-in"><a href="registro.html"><i class="fas fa-bell"></i>&nbsp;Nuevos Avisos</a></li>
+                        <li style="display: none;" class="logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+
+                    </ul>
+                </nav>
+                <!-- mobile menu navigation end -->
+            </div>
+            <!-- mobile menu end -->
+            <!-- offcanvas widget area start -->
+            <div class="offcanvas-widget-area">
+                <div class="off-canvas-social-widget">
+                  <a href="https://www.facebook.com/Polivirtual.Oficial"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/Polivirtual_IPN"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/channel/UCQuC6O_iVpdiuhSHe-12jvA"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- offcanvas widget area end -->
+        </div>
+    </div>
+  </aside>
+  <!-- off-canvas menu end TERMINA TODO EL MENU -->
+
+    <!-- Hero Section -->
+
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <br>
+            <h2 class="sub-headline">
+                <span class="first-letter">P</span>olivirtual
+            </h2>
+            <h1 class="headline">
+                Plataformas - Pilares
+            </h1>
+            <!--div class="headline-description">
+                <div class="separator">
+                    <div class="line line-left"></div>
+                    <div class="asterisk"><i class="far fa-comments"></i></div>
+                    <div class="line line-right"></div>
+                </div>
+            <div class="single-animation">
+                <h5>Comunicate con nosotros</h5>
+                <a href="#galeria" class="btn cta-btn">Preguntas Frecuentes</a>
+            </div-->
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+
+  
+
+    <section id="galeria">
+      <div class="contenedor2">
+          <main class="contenido-principal">
+              <img src="./img/comunidad/plataformas/plataforma-pilares.png" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
+              <div class="contenido-principal__contenedor">
+                  <h1 class="contenido-principal__titulo">Pilares</h1>
+                  <div class="border1"></div>
+                  <p class="contenido-principal__resumen">
+                    Ingresa a tu plataforma.
+                  </p>
+                  <br>
+                  <a href="https://www.pilares.polivirtual.ipn.mx/login/pilares/" class="btn2">Visita la plataforma</a>
+              </div>
+          </main>
+      </section>
+
+
+     
+        
+  
+  <!--BOOTSTRAP SCRIPTS-->
+  
+	<!-- Modal  SignUP-->
+	<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h6 class="modal-title" id="exampleModalLabel">Registro:
+			  Contraseña con al menos 6 caracteres
+			</h6>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<form id="signup-form">
+			  <div class="form-group">
+				  <input type="text" id="signup-email" class="form-control"
+				  placeholder="E-mail" required>
+			  </div>
+			  <div class="form-group">
+				  <input type="password" id="signup-password" class="form-control"
+				  placeholder="Contraseña" required>
+			  </div>
+			  <button type="submit" class="btn btn-primary">SignUp</button>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  
+  
+  
+	<!-- Modal  SignIn-->
+	<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h6 class="modal-title" id="exampleModalLabel">Ingresa a nuestra plataforma y mantente informado
+			</h6>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			  
+			<form id="login-form">
+				
+			  <!--div class="form-group">
+				  <input type="text" id="login-email" class="form-control"
+				  placeholder="E-mail" required>
+			  </div>
+			  <div class="form-group">
+				  <input type="password" id="login-password" class="form-control"
+				  placeholder="Contraseña" required>
+			  </div>
+			  
+			  <button type="submit" class="btn btn-info btn-block">Ingresa</button-->
+			  
+			  <button type="button" class="btn btn-secondary btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
+			  <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
+			</form>
+		  </div>
+		</div>
+	  </div>
+    </div>
+
+
+    
+      <!--Calendario ***EL CSS ESTA EN CARRERAS *** -->
+      <!--div id="Iframe-Liason-Sheet" class="iframe-border center-block-horiz">
+        <div class="responsive-wrapper responsive-wrapper-wxh-550x2000">
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;
+          bgcolor=%23ffffff&amp;ctz=America%2FMexico_City&amp;src=amxzdWNoaWxAZ21haWwuY29t&amp;
+          src=ZXMubWV4aWNhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23039BE5
+          &amp;color=%230B8043&amp;showTitle=1&amp;showCalendars=1&amp;showTabs=0&amp;showPrint=0
+          &amp;showDate=1&amp;showNav=1" style="border-width:0" width="800" height="600" 
+          frameborder="0" scrolling="no"></iframe>
+        </div>
+       </div--> 
+    
+
+<!--MAIN CONTENT-->
+<div class="container p-5" style="z-index:1">
+	<div class="row">
+	  <div class="col-md-6 offset-md-3">
+		<ul class="list-group posts">
+  
+		</ul>
+	  </div>
+	</div>
+  </div>
+  
+
+
+   <!-- Inicia el footer-->
+   <footer>
+    <div class="footer-container">
+      <div class="left-col">
+        <img src="../img/logofooter.png" alt="" class="logo-banner">
+        <!--img src="./img/Logo_e4-Blanco.png" alt="" class="logo-banner1"-->
+        <!--div class="social-media-footer">
+          <a href="https://www.facebook.com/Educaci%C3%B3n-40-865699210447618/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/0Educacion4"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/educacion4.0/?hl=es-la"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCG98vucPO0AHtH9H_T0_C-Q?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a-->
+        </div-->
+        <p class="rights-text">© Instituto Politécnico Nacional</p>
+      </div>
+
+      <div class="right-col">
+        <h1>Contáctanos</h1>
+        <div class="border"></div>
+        <div class="social-media-footer">
+            <a href="mailto:polivirtualapp@gmail.com"><i class="far fa-envelope"></i></a>
+            <a href="tel:5557296000"><i class="fas fa-phone"></i></a>
+            <a href="https://www.google.com/maps/place/Unidad+Profesional+%E2%80%9CAdolfo+L%C3%B3pez+Mateos%E2%80%9D+-+IPN/@19.5006424,-99.143223,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c9f09748df:0x21b5b4b0a648d9aa!8m2!3d19.5006424!4d-99.1410343">
+            <i class="fas fa-map-marked-alt"></i></a>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Termina Footer -->
+
+<!-- Top scroll-->
+<a href="#" class="scrollTopTop"><i class="fa fa-chevron-up"></i></a>
+
+<!-- PWA -->
+<script src="./script.js"></script>
+
+
+<!-- AOS Script-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+
+<!--BOOTSTRAPSCRIPTS-->
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<!--BOOTSTRAP NUEVOS-->
+
+<!--BOOTSTRAPSCRIPTS NEW-->  
+
+
+
+
+<!--FIREBASE SCRIPTS-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+     
+     <script>
+       // Your web app's Firebase configuration
+       var firebaseConfig = {
+        apiKey: "AIzaSyCCNj5wghQ-XnrkhIRuq2d9m1WqGOMrZe8",
+    authDomain: "ipn-polivirtual.firebaseapp.com",
+    projectId: "ipn-polivirtual",
+    storageBucket: "ipn-polivirtual.appspot.com",
+    messagingSenderId: "859321637774",
+    appId: "1:859321637774:web:158754ee7da66463ca62df",
+    measurementId: "G-LRR7FSPSP9"
+        };
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+       const auth = firebase.auth();
+       // FireStore base de datos
+       const fs = firebase.firestore();
+       firebase.analytics();
+     </script>
+     <!--TERMINA FIREBASE-->
+
+<!--CUSTOM CODE-->
+<script src="./registro.js"></script>
+<script src="./main/scripts.js"></script>
+<script src="./main/nuevos2.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--LOCAL SCRIPTS-->
+	<!--Jquery js-->
+    <script src="./lib/jquery-3.0.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./lib/bootstrap.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="./lib/smooth-scroll.js"></script>
+    <!--Main js-->
+    <script src="./lib/main.js"></script>
+    <!--Glider -->
+
+
+
+
+</body>
+</html>
+
+
+

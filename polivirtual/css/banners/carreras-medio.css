@@ -1,0 +1,408 @@
+
+
+.hero{
+  width: 100%;
+  height: 35vh;
+  /*background: linear-gradient(to bottom, #6c1d45 , #a821643b), url("../../img/carreras/diseño-grafico/fondoprueba.jpeg") center no-repeat;
+  /*background: #3b3b3b;*/
+  background-size: cover;
+  /*minuto 40:45*/
+  display: flex;
+  align-items: center;
+  text-align: center; 
+  /*font-family: 'Permanent Marker', cursive;*/
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, #6c1d45 , #a821643b), url("../../img/carreras/medio-superior/fondo.png") center no-repeat;
+  background-size: cover;
+  border-radius: 0 0 250% 250%/0 0 40% 40%;
+  z-index: -1;
+
+}
+@media screen and (min-width: 700px){
+
+  .hero{
+    width: 100%;
+    height: 45vh;
+    background:linear-gradient(to bottom, #6c1d45b9 , #a821643b), url("../../img/carreras/medio-superior/fondo.png") center no-repeat;
+    /*background: #3b3b3b;*/
+    background-size: cover;
+    /*minuto 40:45*/
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    /*font-family: 'Permanent Marker', cursive;*/
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .hero:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background: url("../../img/carreras/medio-superior/fondo.png") center no-repeat;
+    background-size: cover;
+    border-radius: 0 0 250% 250%/0 0 40% 40%;
+    z-index: -1;
+  }
+
+}
+
+  .sub-headline{
+    color: #ffffff;
+    /*font-weight: 100x;*/
+    line-height: 1;
+    /*letter-spacing: 2px;*/
+    opacity: 0;
+    animation: fadeDown 3.0s forwards;
+    animation-delay: .9s;
+  }
+
+  .first-letter{
+    text-transform: uppercase;
+  }
+
+  .headline{
+    color: #fff;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    /*font-weight: 900;*/
+    /*letter-spacing: .3rem;*/
+    /*margin-right: -.5rem;*/
+    
+    /* agregue este */
+    /*margin-bottom: 10%;*/
+    animation: scale 3s forwards;
+    
+  }
+
+
+
+/* Secccion ABOUT ME */
+
+
+.container-about{
+    max-width: 1050px;
+    margin: auto;
+    /*background: linear-gradient(to right, #6c1d45 , #a82165 );*/
+    /*background: #6c1d45;*/
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0px 2px 14px -2px rgba(0,0,0,0.75);
+    /*background: url("../../img/carreras/medio-superior/about-fondo.png") center no-repeat;*/
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    top: -91px;
+    margin-bottom: -100px;
+  }
+
+  .container-about h4{
+    color: #111;
+  }
+
+  .row-about{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .list{
+    display: inline-block;
+  }
+  
+  .about-me{
+    padding: 10px 5%;
+  }
+  
+  .about-me .section-title p{
+    color: #111;
+    /*background-color: rgb(26, 26, 26);*/
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* Aqui se cambia el margen de la seccion about me */
+    margin-bottom: 30px;
+  }
+  
+  .about-me .section-title h3{
+    color: #111;
+    /*background-color: rgb(41, 41, 41);*/
+    display: inline-block;
+    font-size: 1.2rem;
+    /*text-transform: uppercase;
+    */
+    margin: 0 0 10px;
+    position: relative;
+    /* ADD */
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    animation: scale .5s forwards;
+
+  }
+  
+  .about-me .section-title h3:before{
+    content: '';
+    left: 0;
+    position: absolute;
+    /* aqui le cambiamos el tamaño a la linea esmeralda */
+    right: 20%;
+    height: 3px;
+    background-color: #6c1d45;
+    border-radius: 25px;
+    /* ADD era 0 */
+    margin-top: 30%;
+  }
+  
+  .about-me .section-title p.small{
+    /*background-color: rgb(41, 41, 41);*/
+    display: block;
+    font-size: 1rem;
+    /*letter-spacing: 2px;*/
+    margin-top: 10px;
+  }
+  
+  .about-me .about-content{
+    color: rgb(17, 17, 17);
+  }
+
+  /* Redondeamos la imagen*/
+  .about-content img{
+    border-radius: 20px;
+  }
+  
+  .about-me .about-content .img{
+    flex:0 0 33.33%;
+    max-width: 33.33%;
+  }
+
+  
+  .about-me .about-content .img img{
+    width: 100%;
+    display: block;
+    /* Aqui cambio la posicion de las imagenes */
+    /*-webkit-transform: rotateY(180deg);*/
+    /*transform: rotateY(180deg);*/
+  }
+  
+  .about-me .about-content .text{
+    flex:0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 50px;
+  }
+  
+  .about-me .about-content .text h4{
+    font-size: 1.2rem;
+    margin: 0 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #6c1d45;
+    padding-bottom: 10px;
+  }
+  
+  .about-me .about-content .text h6{
+    font-size: 17px;
+    margin: 0 0 25px;
+    color: #111;
+  }
+  
+  .about-me .about-content .text h6 span{
+    color: #111;
+  }
+  
+  .about-me .about-content .text p{
+    font-size: 1rem;
+    color: #111;
+    /*margin: 0 0 20px;*/
+  }
+  
+  .about-me .about-content .text .info{
+    color: #6c1d45;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  
+  .about-me .about-content .text .info .list{
+    /*background-color: #111;*/
+    flex: 0 0 calc(50% - 3%);
+    max-width: calc(50% - 15px);
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #6c1d45;
+    padding-bottom: 10px;
+  }
+  
+  .about-me .about-content .text .info .list label{
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+  .about-me .about-content .text .info .list p{
+      /* lo tuve que poner para centrarlo*/
+    margin: -3px;
+    font-size: 1rem;
+  }
+  
+
+  
+  @media(max-width: 700px){
+    .container-about{
+      position: relative;
+      top: -30px;
+      margin-bottom: -60px;
+    }
+
+    .about-me .about-content .text{
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-left: 0px;
+      padding-top: 30px;
+    }
+    .about-me .about-content .img{
+      flex: 0 0 100%;
+      max-width: 90%;
+      margin: auto;
+    }
+    
+    .about-me .section-title p.small{
+        /*background-color: rgb(41, 41, 41);*/
+        display: block;
+        font-size: 1rem;
+        /*letter-spacing: 2px;*/
+        margin-top: 10px;
+      }
+
+
+    .about-me .about-content .text .info .list label{
+        padding-right: 10px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+  
+    .about-me .about-content .text .info .list p{
+      margin: 0;
+      font-size: 14px;
+      margin: -3%;
+      padding-left: 5%;
+    }
+  
+    .about-me .about-content .text .info{
+      font-size: 1rem;
+    }
+  
+  }
+  
+
+  /* GALERIA */
+
+
+
+  /* *** */
+
+
+
+  /* CARRERAS */
+
+.slider__carrera{
+  max-width: 1200px;
+  display: flex;
+  text-align: center;
+  place-items: center;
+  margin: auto;
+  padding: 4%;
+}
+
+.slider__carrera .card_carrera{
+  background: linear-gradient(to right, #6c1d45 , #a82165 );
+  /*box-shadow: 0px 2px 14px -2px rgba(0,0,0,0.75);*/
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 10px;
+  transition: ease-in .5s;
+  /*transform: scale(1);*/
+}
+
+.slider__carrera .card_carrera:hover{
+  /*transform: translateY(-9px);*/
+  transition: ease-in .5s;
+  /*box-shadow: 0px 2px 14px -2px rgba(83, 4, 60, 0.75);*/
+  /*transform: scale(0.97);*/
+}
+
+.slider__carrera .card_carrera .img_carrera{
+  height: 150px;
+  width: 100%;
+}
+
+.slider__carrera .card_carrera .img_carrera img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider__carrera .card_carrera .content__carrera{
+  padding: 10px 10px;
+}
+
+.card_carrera .content__carrera .title__carrera{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card_carrera .content__carrera .sub-title__carrera{
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.card_carrera .content__carrera p{
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.card_carrera .content__carrera .btn__carrera{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+
+}
+
+.card_carrera .content__carrera .btn__carrera button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card_carrera .content__carrera .btn__carrera button:hover{
+  transform: scale(0.9);
+}
+
+
+
+  /* *** */
+
+
+
+
+
+
+
+  

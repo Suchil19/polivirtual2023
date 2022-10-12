@@ -1,0 +1,293 @@
+
+.hero{
+    width: 100%;
+    height: 35vh;
+    /*background: linear-gradient(to bottom, #6c1d45 , #a821643b), url("../../img/carreras/diseño-grafico/fondoprueba.jpeg") center no-repeat;
+    /*background: #3b3b3b;*/
+    background-size: cover;
+    /*minuto 40:45*/
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    /*font-family: 'Permanent Marker', cursive;*/
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .hero:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, #6c1d45 , #a821643b), url("../../img/proceso-de-admision/conocatoriaNS/fondo.png") center no-repeat;
+    background-size: cover;
+    border-radius: 0 0 250% 250%/0 0 40% 40%;
+    z-index: -1;
+  
+  }
+  @media screen and (min-width: 700px){
+  
+    .hero{
+      width: 100%;
+      height: 45vh;
+      background:linear-gradient(to bottom, #6c1d45b9 , #a821643b), url("../../img/proceso-de-admision/conocatoriaNS/fondo.png") center no-repeat;
+      /*background: #3b3b3b;*/
+      background-size: cover;
+      /*minuto 40:45*/
+      display: flex;
+      align-items: center;
+      text-align: center; 
+      /*font-family: 'Permanent Marker', cursive;*/
+      font-family: 'Roboto', sans-serif;
+    }
+  
+    .hero:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 45%;
+      background: url("../../img/proceso-de-admision/conocatoriaNS/fondo.png") center no-repeat;
+      background-size: cover;
+      border-radius: 0 0 250% 250%/0 0 40% 40%;
+      z-index: -1;
+    }
+  
+  }
+  
+  
+    .sub-headline{
+      color: #ffffff;
+      /*font-weight: 100x;*/
+      line-height: 1;
+      /*letter-spacing: 2px;*/
+      opacity: 0;
+      animation: fadeDown 3.0s forwards;
+      animation-delay: .9s;
+    }
+  
+    .first-letter{
+      text-transform: uppercase;
+    }
+  
+    .headline{
+      color: #fff;
+      font-size: 23px;
+      font-family: 'Roboto', sans-serif;
+      /*font-weight: 900;*/
+      /*letter-spacing: .3rem;*/
+      /*margin-right: -.5rem;*/
+      
+      /* agregue este */
+      /*margin-bottom: 10%;*/
+      animation: scale 3s forwards;
+      
+    }
+  
+    @media screen and (min-width: 1200px){
+    
+      .sub-headline{
+      font-size: 2rem;
+      }
+    
+      .first-letter{
+        font-size: 2rem;
+      }
+    
+      .headline{
+        font-size: 2rem;
+        letter-spacing:  .2rem;
+      }
+  }
+  
+  
+  
+  .contenedor2 {
+      max-width: 1200px;
+      width: 90%;
+    margin: auto;
+    /* aqui esta la separacion de div*/
+    padding: 0% 0%;
+    margin-top: 1%;
+    margin-bottom: -5%;
+  }
+  
+  /* --- --- CONTENEDOR PRINCIPAL --- --- */
+  
+  .contenido-principal {
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .contenido-principal__imagen {
+      vertical-align: top;
+      margin-right: 20px;
+      width: 50%;
+      max-width: 550px;
+  }
+  
+  .contenido-principal__contenedor2 {
+      width: 50%;
+  }
+  
+  .contenido-principal__titulo {
+      font-weight: normal;
+    font-size: 19px;
+  }
+  
+  .contenido-principal__resumen {
+      font-family: 'Roboto', sans-serif;
+      line-height: 30px;
+    color: #111;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  /* --- --- MEDIA QUERIES --- --- */
+  @media screen and (max-width: 800px) {
+    .contenedor2{
+     margin-top: -15%;
+    }
+  
+    .contenido-principal__imagen {
+      vertical-align: top;
+      margin-right: 0px;
+      width: 50%;
+      max-width: 550px;
+      border-radius: none;
+    }
+  
+      .contenido-principal {
+          flex-direction: column;
+      }
+  
+      .contenido-principal > * {
+          width: 100%;
+    }
+  }
+
+
+  /* Proceso de Admisión */
+
+
+
+  section .container__proceso__admision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contenido-principal__imagen2 {
+    margin-right: 0px;
+    margin-top: -90%;
+    width: 40%;
+    max-width: 550px;
+    position: absolute;
+}
+
+
+  .container__proceso{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0px auto;
+  }
+
+  .container__proceso .card__proceso{
+      position: relative;
+      min-width: 320px;
+      height: 440px;
+      box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      margin: 5px;
+  }
+
+  .container__proceso .card__proceso .box__proceso{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background: linear-gradient(to right, #6c1d45 , #a82165);
+      border: 2px solid rgb(199, 199, 199);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.329);
+      transition: 0.5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+      /*background: linear-gradient(to bottom, #6c1d45 , #a821643b), url("../../img/proceso-de-admision/fondo.png") center no-repeat;
+      background-size: cover;*/
+  }
+
+  .container__proceso .card__proceso .box__proceso:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .container__proceso .card__proceso .box__proceso .content__proceso{
+      padding: 20px;
+      text-align: center;
+  }
+
+  .container__proceso .card__proceso .box__proceso .content__proceso h2{
+      position: absolute;
+      top: -10px;
+      left: 50px;
+      font-size: 12rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.075);
+  }
+
+  .container__proceso .card__proceso .box__proceso .content__proceso h3{
+      font-size: 1.5rem;
+      color: #fff;
+      z-index: 1;
+      transition: 0.5s;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.137);
+      padding-bottom: 20px;
+  }
+
+  .container__proceso .card__proceso .box__proceso .content__proceso p{
+    font-size: 17px;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+  }
+
+  .container__proceso .card__proceso .box__proceso .content__proceso a{
+    position: relative;
+    display: inline-block;
+    padding: 9px 19px;
+    background: linear-gradient(to bottom, #99255f , #a82164e7);
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    padding: 5px 15px;
+    border: 2px solid #fff;
+  }
+
+
+
+  .border3{
+      align-items: center;
+    width: 100px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    margin: 10px 29%;
+    border-radius: 30px;
+  }
